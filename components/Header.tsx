@@ -57,12 +57,12 @@ export default function Header() {
         <nav className="hidden lg:block text-lg 2xl:text-2xl font-medium ">
           <ul className="flex gap-2 list-none">
             {/* <NavLink href="#hero" text="Home" /> */}
-            <NavLink href="#projects" text="Projects" />
-            <NavLink href="#about" text="About" />
-            <NavLink href="#skills" text="Skills" />
-            <NavLink href="#work" text="Work Experience" />
-            <NavLink href="#education" text="Education" />
-            <NavLink href="#contact" text="Contact" />
+            <NavLink href="/projects" text="Projects" />
+            <NavLink href="/#about" text="About" />
+            <NavLink href="/#skills" text="Skills" />
+            <NavLink href="/#work" text="Work Experience" />
+            <NavLink href="/#education" text="Education" />
+            <NavLink href="/#contact" text="Contact" />
           </ul>
         </nav>
 
@@ -90,12 +90,12 @@ export default function Header() {
         <div className="lg:hidden px-4 pb-4">
           <ul className="flex flex-col gap-2 text-lg font-medium items-end list-none">
             {/* <NavLink href="#hero" text="Home" isMobile /> */}
-            <NavLink href="#projects" text="Projects" />
-            <NavLink href="#about" text="About" />
-            <NavLink href="#skills" text="Skills" />
-            <NavLink href="#work" text="Work Experience" />
-            <NavLink href="#education" text="Education" />
-            <NavLink href="#contact" text="Contact" />
+            <NavLink href="/projects" text="Projects" />
+            <NavLink href="/#about" text="About" />
+            <NavLink href="/#skills" text="Skills" />
+            <NavLink href="/#work" text="Work Experience" />
+            <NavLink href="/#education" text="Education" />
+            <NavLink href="/#contact" text="Contact" />
           </ul>
         </div>
       )}
