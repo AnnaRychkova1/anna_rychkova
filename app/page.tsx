@@ -7,9 +7,9 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="px-4 py-6">
+      <main>
         <Hero />
-        <p>Anna</p>
+
         {/* 
         <About />
         <Services />

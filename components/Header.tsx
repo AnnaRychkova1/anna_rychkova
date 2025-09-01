@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
+import Icon from './Icon';
 
 interface NavLinkProps {
   href: string;
@@ -30,7 +31,7 @@ export default function Header() {
           : 'bg-[var(--dark-accent)] text-[var(--light-accent)]'
       }`}
     >
-      <div className="container mx-auto flex justify-between items-center px-4 py-2 lg:px-8 ">
+      <div className="container mx-auto flex justify-between items-center">
         <a href="./" className="flex-shrink-0">
           {isBlurred ? (
             <Image
@@ -68,22 +69,19 @@ export default function Header() {
         {/* Mobile Toggle */}
         <button
           onClick={() => setIsMobileMenuMenuOpen(!isMobileMenuOpen)}
-          className="lg:hidden focus:outline-none px-4 hover:drop-shadow-[0_1px_1px_#f9689d]"
+          className="lg:hidden focus:outline-none px-4"
           aria-label="Toggle navigation"
         >
-          <svg
-            className="w-9 h-10"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M4 6h16M4 12h16M4 18h16"
-            />
-          </svg>
+          <Icon
+            iconName="More"
+            width={24}
+            height={24}
+            className={`w-9 h-10 transition-all duration-300 ${
+              isBlurred
+                ? 'fill-[var(--dark-accent)] stroke-[var(--dark-accent)] hover:drop-shadow-[0_1px_2px_var(--light-accent)]'
+                : 'fill-[var(--light-accent)] stroke-[var(--light-accent)] hover:drop-shadow-[0_1px_2px_var(--light-accent)]'
+            }`}
+          />
         </button>
       </div>
 
