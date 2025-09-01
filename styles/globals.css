@@ -1,0 +1,74 @@
+@import 'tailwindcss';
+@import './hero.css';
+@import './footer.css';
+
+:root {
+  --bg: #fef4f8;
+  --text-color: #0f0c0d;
+  --light-accent: #f9689d;
+  --dark-accent: #730742;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text-color);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+section {
+  padding: 0 16px;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 100%;
+}
+
+h1 {
+  font-size: xx-large;
+}
+
+.my-scroll-btn svg {
+  fill: var(--light-accent);
+  stroke: var(--light-accent);
+}
+
+.my-scroll-btn:hover svg {
+  fill: var(--dark-accent);
+  stroke: var(--dark-accent);
+}
+
+.first {
+  background-color: var(--dark-accent);
+}
+
+.second {
+  background-color: var(--light-accent);
+}
+
+.third {
+  background-color: var(--bg);
+}
+
+.fourth {
+  background-color: var(--text-color);
+}

@@ -1,0 +1,119 @@
+'use client';
+
+import { useState, useEffect } from 'react';
+import Image from 'next/image';
+
+interface NavLinkProps {
+  href: string;
+  text: string;
+  isMobile?: boolean;
+}
+
+export default function Header() {
+  const [isMobileMenuOpen, setIsMobileMenuMenuOpen] = useState(false);
+  const [isBlurred, setIsBlurred] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      setIsBlurred(scrollY > 0);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+  return (
+    <header
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300  ${
+        isBlurred
+          ? 'backdrop-blur-md shadow-md bg-transparent text-[var(--dark-accent)]'
+          : 'bg-[var(--dark-accent)] text-[var(--light-accent)]'
+      }`}
+    >
+      <div className="container mx-auto flex justify-between items-center px-4 py-2 lg:px-8 ">
+        <a href="./" className="flex-shrink-0">
+          {isBlurred ? (
+            <Image
+              src="/images/logo_rectangle_tr.png"
+              alt="My Logo"
+              width={200}
+              height={40}
+              priority
+              className="logo"
+            />
+          ) : (
+            <Image
+              src="/images/logo_rectangle_pink.png"
+              alt="My Logo"
+              width={200}
+              height={40}
+              priority
+              className="logo"
+            />
+          )}
+        </a>
+        {/* Desktop Nav */}
+        <nav className="hidden lg:block text-lg 2xl:text-2xl font-medium ">
+          <ul className="flex gap-2 list-none">
+            {/* <NavLink href="#hero" text="Home" /> */}
+            <NavLink href="#projects" text="Projects" />
+            <NavLink href="#about" text="About" />
+            <NavLink href="#skills" text="Skills" />
+            <NavLink href="#work" text="Work Experience" />
+            <NavLink href="#education" text="Education" />
+            <NavLink href="#contact" text="Contact" />
+          </ul>
+        </nav>
+
+        {/* Mobile Toggle */}
+        <button
+          onClick={() => setIsMobileMenuMenuOpen(!isMobileMenuOpen)}
+          className="lg:hidden focus:outline-none px-4 hover:drop-shadow-[0_1px_1px_#f9689d]"
+          aria-label="Toggle navigation"
+        >
+          <svg
+            className="w-9 h-10"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+      </div>
+
+      {/* Mobile Nav */}
+      {isMobileMenuOpen && (
+        <div className="lg:hidden px-4 pb-4">
+          <ul className="flex flex-col gap-2 text-lg font-medium items-end list-none">
+            {/* <NavLink href="#hero" text="Home" isMobile /> */}
+            <NavLink href="#projects" text="Projects" />
+            <NavLink href="#about" text="About" />
+            <NavLink href="#skills" text="Skills" />
+            <NavLink href="#work" text="Work Experience" />
+            <NavLink href="#education" text="Education" />
+            <NavLink href="#contact" text="Contact" />
+          </ul>
+        </div>
+      )}
+    </header>
+  );
+}
+
+function NavLink({ href, text, isMobile = false }: NavLinkProps) {
+  return (
+    <li className="list-none">
+      <a
+        href={href}
+        className={`px-4 py-2 rounded-full hover:text-[var(--darc-accent)] hover:drop-shadow-[0_1px_1px_#f9689d] transition ${isMobile ? 'block' : ''}`}
+      >
+        {text}
+      </a>
+    </li>
+  );
+}
