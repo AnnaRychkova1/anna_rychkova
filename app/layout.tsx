@@ -81,21 +81,6 @@ export default function RootLayout({
       <body className={`${inter.variable} ${allura.variable} antialiased`}>
         {children}
       </body>
-      {/* <script type="application/ld+json">
-        {JSON.stringify({
-          '@context': 'https://schema.org',
-          '@type': 'Person',
-          name: 'Anna Rychkova',
-          url: 'https://anna.rychkova.com',
-          sameAs: [
-            'https://github.com/yourprofile',
-            'https://linkedin.com/in/yourprofile',
-          ],
-          jobTitle: 'Software Engineer',
-          description:
-            'Software engineer and web developer specializing in modern technologies.',
-        })}
-      </script> */}
     </html>
   );
 }
