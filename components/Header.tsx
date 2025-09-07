@@ -2,7 +2,8 @@
 
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
-import Icon from './Icon';
+// import Icon from './Icon';
+import { FiMenu } from 'react-icons/fi';
 
 interface NavLinkProps {
   href: string;
@@ -31,7 +32,7 @@ export default function Header() {
           : 'bg-[var(--dark-accent)] text-[var(--light-accent)]'
       }`}
     >
-      <div className="container mx-auto flex justify-between items-center">
+      <div className="container header-container mx-auto flex justify-between items-center">
         <a href="./" className="flex-shrink-0">
           {isBlurred ? (
             <Image
@@ -58,9 +59,9 @@ export default function Header() {
           <ul className="flex gap-2 list-none">
             {/* <NavLink href="#hero" text="Home" /> */}
             <NavLink href="/projects" text="Projects" />
-            <NavLink href="/#about" text="About" />
             <NavLink href="/#skills" text="Skills" />
-            <NavLink href="/#work" text="Work Experience" />
+            <NavLink href="/#about" text="About" />
+            {/* <NavLink href="/#work" text="Work Experience" /> */}
             <NavLink href="/#education" text="Education" />
             <NavLink href="/#contact" text="Contact" />
           </ul>
@@ -72,10 +73,18 @@ export default function Header() {
           className="lg:hidden focus:outline-none px-4"
           aria-label="Toggle navigation"
         >
-          <Icon
+          {/* <Icon
             iconName="More"
             width={24}
             height={24}
+            className={`w-9 h-10 transition-all duration-300 ${
+              isBlurred
+                ? 'fill-[var(--dark-accent)] stroke-[var(--dark-accent)] hover:drop-shadow-[0_1px_2px_var(--light-accent)]'
+                : 'fill-[var(--light-accent)] stroke-[var(--light-accent)] hover:drop-shadow-[0_1px_2px_var(--light-accent)]'
+            }`}
+          /> */}
+          <FiMenu
+            size={24}
             className={`w-9 h-10 transition-all duration-300 ${
               isBlurred
                 ? 'fill-[var(--dark-accent)] stroke-[var(--dark-accent)] hover:drop-shadow-[0_1px_2px_var(--light-accent)]'
@@ -91,9 +100,9 @@ export default function Header() {
           <ul className="flex flex-col gap-2 text-lg font-medium items-end list-none">
             {/* <NavLink href="#hero" text="Home" isMobile /> */}
             <NavLink href="/projects" text="Projects" />
-            <NavLink href="/#about" text="About" />
             <NavLink href="/#skills" text="Skills" />
-            <NavLink href="/#work" text="Work Experience" />
+            <NavLink href="/#about" text="About" />
+            {/* <NavLink href="/#work" text="Work Experience" /> */}
             <NavLink href="/#education" text="Education" />
             <NavLink href="/#contact" text="Contact" />
           </ul>

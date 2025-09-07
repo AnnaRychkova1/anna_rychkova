@@ -5,3 +5,10 @@ export interface IconProps {
   viewBox?: string;
   className?: string;
 }
+
+// export type IconData = {
+//   icon: JSX.Element;
+//   top: string;
+//   left: string;
+//   size: number;
+// };

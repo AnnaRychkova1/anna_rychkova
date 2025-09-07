@@ -1,5 +1,7 @@
 'use client';
-import Icon from './Icon';
+// import Icon from './Icon';
+import { FaGithub, FaLinkedin, FaHeart } from 'react-icons/fa';
+import { MdLocationOn } from 'react-icons/md';
 
 export default function Footer() {
   return (
@@ -14,12 +16,13 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="contact-link"
             >
-              <Icon
+              <FaGithub size={28} className="footer-icon" />
+              {/* <Icon
                 iconName="GitHub"
                 width={28}
                 height={28}
                 className="footer-icon"
-              />
+              /> */}
             </a>
           </li>
           <li>
@@ -30,32 +33,34 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="contact-link"
             >
-              <Icon
+              <FaLinkedin size={28} className="footer-icon" />
+              {/* <Icon
                 iconName="LinkedIn"
                 width={28}
                 height={28}
                 className="footer-icon"
-              />
+              /> */}
             </a>
           </li>
         </ul>
-        {/* <div> */}
-        {/* &copy; {new Date().getFullYear()} Anna Rychkova. Made with 
-          <Icon iconName="Cofee" width={24} height={24} /> &
-          <Icon iconName="Star" width={24} height={24} /> */}
-        <p className="flex items-center gap-1">
+        <p>
           &copy; {new Date().getFullYear()} Made with{' '}
-          <Icon iconName="Heart" width={24} height={24} className="heart" /> by
-          Anna Rychkova
+          <span className="footer-span">
+            {/* <Icon iconName="Heart" width={24} height={24} className="heart" /> */}
+            <FaHeart size={22} className="heart" />
+          </span>{' '}
+          by Anna Rychkova
         </p>
-        {/* </div> */}
+
         <div
           className="flex gap-1 pr-[52px]"
           onClick={() =>
             window.open('https://www.google.com/maps/place/Ireland', '_blank')
           }
         >
-          <Icon iconName="Map" width={24} height={24} className="footer-icon" />
+          {/* <Icon iconName="Map" width={24} height={24} className="footer-icon" /> */}
+
+          <MdLocationOn size={28} className="footer-icon" />
           <p className="text-2xl text-[var(--dark-accent)]">Ireland</p>
         </div>
       </div>

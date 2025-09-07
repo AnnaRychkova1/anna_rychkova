@@ -1,3 +1,8 @@
+.footer-span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
 .footer-icon {
   fill: var(--dark-accent);
   stroke: var(--dark-accent);

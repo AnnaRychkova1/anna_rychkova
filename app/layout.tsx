@@ -1,16 +1,29 @@
 import React from 'react';
 import '@/styles/globals.css';
-import { Inter, Allura } from 'next/font/google';
+import { Inter, Roboto, Allura, Dancing_Script } from 'next/font/google';
 
 const inter = Inter({
   subsets: ['latin'],
   weight: ['400', '700'],
   variable: '--font-inter',
 });
+
+const roboto = Roboto({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  variable: '--font-roboto',
+});
+
 const allura = Allura({
   subsets: ['latin'],
   weight: '400',
-  variable: '--font-inter',
+  variable: '--font-allura',
+});
+
+const dancing = Dancing_Script({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  variable: '--font-dancing',
 });
 
 export const metadata = {
@@ -78,7 +91,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${allura.variable} antialiased`}>
+      <body
+        className={`${inter.variable} ${roboto.variable} ${allura.variable} ${dancing.variable} antialiased`}
+      >
         {children}
       </body>
     </html>
