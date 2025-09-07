@@ -16,7 +16,7 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="contact-link"
             >
-              <FaGithub size={28} className="footer-icon" />
+              <FaGithub size={36} className="footer-icon" />
               {/* <Icon
                 iconName="GitHub"
                 width={28}
@@ -33,7 +33,7 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="contact-link"
             >
-              <FaLinkedin size={28} className="footer-icon" />
+              <FaLinkedin size={36} className="footer-icon" />
               {/* <Icon
                 iconName="LinkedIn"
                 width={28}

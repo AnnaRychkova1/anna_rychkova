@@ -24,7 +24,7 @@ export default function ScrollToTopButton() {
     <button
       onClick={scrollToTop}
       title="Go to top"
-      className={`my-scroll-btn fixed bottom-4 right-6 z-50 flex items-center justify-center rounded-full bg-[var(--dark-accent)] transition duration-300 hover:bg-[var(--light-accent)] ${
+      className={`my-scroll-btn fixed bottom-6 right-6 z-50 flex items-center justify-center rounded-full bg-[var(--dark-accent)] transition duration-300 hover:bg-[var(--light-accent)] ${
         visible ? 'opacity-100' : 'opacity-0 pointer-events-none'
       } w-12 h-12 md:w-14 md:h-14`}
     >
