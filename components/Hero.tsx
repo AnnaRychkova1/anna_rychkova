@@ -76,7 +76,7 @@ export default function Hero() {
           </div>
         ))}
       </div>
-      <div className="container relative z-10 flex flex-col justify-between items-center gap-6 h-[90vh]">
+      <div className="container relative z-10 flex flex-col justify-between items-center gap-6 h-[86vh] sm:h-[90vh]">
         <div className="mt-[16vh] max-w-[90rem] w-[92%] flex flex-col items-center gap-8">
           <h1 className="text-4xl md:text-6xl font-bold text-center">
             Hi, I&rsquo;m
@@ -138,7 +138,7 @@ export default function Hero() {
           <motion.a
             href="/Anna_Rychkova_Software_Developer.pdf"
             download
-            className="download-btn inline-flex items-center gap-2 px-6 py-3 bg-[var(--light-accent)] text-[var(--dark-accent)] font-semibold rounded-2xl shadow-md hover:bg-[var(--dark-accent)] hover:text-[var(--light-accent)] transition-all duration-300 w-max"
+            className="download-btn inline-flex items-center gap-2 px-6 py-3 bg-[var(--light-accent)] text-[var(--dark-accent)] font-semibold rounded-2xl shadow-md hover:bg-[var(--dark-accent)] hover:text-[var(--light-accent)] transition-all duration-300 w-max text-center"
             initial={{ opacity: 0, y: 30, scale: 0.9 }}
             whileInView={{ opacity: 1, y: 0, scale: 1 }}
             viewport={{ once: true }}
