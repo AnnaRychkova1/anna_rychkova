@@ -76,8 +76,8 @@ export default function Hero() {
           </div>
         ))}
       </div>
-      <div className="container relative z-10 flex flex-col justify-between items-center gap-6 h-[86vh] sm:h-[90vh]">
-        <div className="mt-[16vh] max-w-[90rem] w-[92%] flex flex-col items-center gap-8">
+      <div className="container relative z-10 flex flex-col justify-between items-center gap-6 h-[82vh] sm:h-[90vh]">
+        <div className="mt-[12vh] sm:mt-[16vh] max-w-[90rem] w-[92%] flex flex-col items-center gap-8">
           <h1 className="text-4xl md:text-6xl font-bold text-center">
             Hi, I&rsquo;m
             <span className="text-[var(--dark-accent)]"> Anna Rychkova</span>
