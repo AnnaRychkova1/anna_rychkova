@@ -138,7 +138,7 @@ export default function Hero() {
           <motion.a
             href="/Anna_Rychkova_Software_Developer.pdf"
             download
-            className="download-btn inline-flex items-center gap-2 px-6 py-3 bg-[var(--light-accent)] text-[var(--dark-accent)] font-semibold rounded-2xl shadow-md hover:bg-[var(--dark-accent)] hover:text-[var(--light-accent)] transition-all duration-300 w-max text-center"
+            className="inline-flex items-center justify-center gap-2  px-6 py-3 bg-[var(--light-accent)] text-[var(--dark-accent)] font-semibold rounded-2xl shadow-md hover:bg-[var(--dark-accent)] hover:text-[var(--light-accent)] transition-all duration-300 w-max md:w-[162px] text-center"
             initial={{ opacity: 0, y: 30, scale: 0.9 }}
             whileInView={{ opacity: 1, y: 0, scale: 1 }}
             viewport={{ once: true }}
@@ -152,7 +152,7 @@ export default function Hero() {
             <FaDownload
               width={22}
               height={22}
-              className="icon fill-[var(--dark-accent)] stroke-[var(--dark-accent)]"
+              // className="icon fill-[var(--dark-accent)] stroke-[var(--dark-accent)]"
             />
             {/* <Icon
               iconName="Download"

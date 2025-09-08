@@ -15,13 +15,13 @@ body {
   color: var(--text-color);
   /* font-family: var(--font-inter), Arial, Helvetica, sans-serif; */
   font-family: var(--font-roboto), sans-serif;
-  font-size: 16px;
+  font-size: 1.15rem;
 }
 
 section,
 header,
 footer {
-  padding: 0 16px;
+  padding: 0 1rem;
 }
 
 img,
@@ -68,7 +68,7 @@ ul {
   height: auto;
 }
 
-.icon {
+/* .icon {
   fill: var(--dark-accent);
   stroke: var(--dark-accent);
   transition: all 0.3s ease;
@@ -77,7 +77,7 @@ ul {
 .icon:hover {
   fill: var(--light-accent);
   stroke: var(--light-accent);
-}
+} */
 
 /* svg {
   fill: var(--dark-accent);
@@ -114,8 +114,9 @@ svg:hover {
 } */
 
 #hero {
-  padding-top: 88px;
+  padding-top: 5.5rem;
   margin: 0 auto;
+  margin-bottom: 2.25rem;
   height: 100vh;
 }
 
@@ -131,10 +132,6 @@ svg:hover {
   pointer-events: none;
 } */
 
-#skills {
-  padding-top: 44px;
-}
-
 .download-btn:hover svg {
   fill: var(--light-accent);
   stroke: var(--light-accent);
@@ -144,7 +141,7 @@ svg:hover {
   section,
   header,
   footer {
-    padding: 0 32px;
+    padding: 0 2rem;
   }
 
   .container {

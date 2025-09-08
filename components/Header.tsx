@@ -58,10 +58,9 @@ export default function Header() {
         <nav className="hidden lg:block text-lg 2xl:text-2xl font-medium ">
           <ul className="flex gap-2 list-none">
             {/* <NavLink href="#hero" text="Home" /> */}
-            <NavLink href="/projects" text="Projects" />
+            <NavLink href="/#projects" text="Projects" />
             <NavLink href="/#skills" text="Skills" />
             <NavLink href="/#about" text="About" />
-            {/* <NavLink href="/#work" text="Work Experience" /> */}
             <NavLink href="/#education" text="Education" />
             <NavLink href="/#contact" text="Contact" />
           </ul>
@@ -99,10 +98,9 @@ export default function Header() {
         <div className="lg:hidden px-4 pb-4">
           <ul className="flex flex-col gap-2 text-lg font-medium items-end list-none">
             {/* <NavLink href="#hero" text="Home" isMobile /> */}
-            <NavLink href="/projects" text="Projects" />
+            <NavLink href="/#projects" text="Projects" />
             <NavLink href="/#skills" text="Skills" />
             <NavLink href="/#about" text="About" />
-            {/* <NavLink href="/#work" text="Work Experience" /> */}
             <NavLink href="/#education" text="Education" />
             <NavLink href="/#contact" text="Contact" />
           </ul>
@@ -113,10 +111,27 @@ export default function Header() {
 }
 
 function NavLink({ href, text, isMobile = false }: NavLinkProps) {
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+    if (href.startsWith('/#')) {
+      e.preventDefault();
+      const id = href.replace('/#', '');
+      const element = document.getElementById(id);
+      if (element) {
+        const rootFontSize = parseFloat(
+          getComputedStyle(document.documentElement).fontSize
+        );
+        const yOffset = -(3.9 * rootFontSize);
+        const y =
+          element.getBoundingClientRect().top + window.scrollY + yOffset;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+      }
+    }
+  };
   return (
     <li className="list-none">
       <a
         href={href}
+        onClick={handleClick}
         className={`px-4 py-2 rounded-full hover:text-[var(--darc-accent)] hover:drop-shadow-[0_1px_1px_#f9689d] transition ${isMobile ? 'block' : ''}`}
       >
         {text}

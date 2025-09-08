@@ -1,18 +1,12 @@
-/* .lottie {
-  position: absolute;
-  top: 0px;
-  right: 0;
-} */
-
 .skills-list {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 16px 8px;
+  gap: 1rem 0.5rem;
   /* border: 2px double var(--light-accent); */
-  border-radius: 24px;
-  padding: 16px;
+  border-radius: 1.5rem;
+  padding: 1rem;
   width: 100%;
   /* width: 264px; */
 }

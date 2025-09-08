@@ -23,7 +23,7 @@ export default function About() {
       <div className="container flex flex-col gap-6">
         <h2 className="text-4xl md:text-6xl font-bold text-center">About Me</h2>
         <motion.div
-          className="flex flex-col gap-3 text-center"
+          className="flex flex-col  gap-3 text-center "
           variants={containerVariants}
           initial="hidden"
           whileInView="show"
@@ -54,16 +54,20 @@ export default function About() {
             user-friendly applications.
           </motion.p>
           <motion.p variants={paragraphVariants}>
-            {' '}
-            I specialize in the{' '}
+            I specialize in building modern web applications using a combination
+            of{' '}
             <span className="text-[var(--dark-accent)] font-bold">
-              MERN stack
+              front-end
             </span>{' '}
-            &#40;MongoDB, Express, React, Node.js&#41; and enjoy leveraging{' '}
+            and{' '}
             <span className="text-[var(--dark-accent)] font-bold">
-              cloud technologies
+              back-end
             </span>{' '}
-            to scale projects.{' '}
+            technologies, and I enjoy leveraging{' '}
+            <span className="text-[var(--dark-accent)] font-bold">
+              cloud platforms
+            </span>{' '}
+            to deliver scalable and reliable solutions.
           </motion.p>
           <motion.p variants={paragraphVariants}>
             Alongside modern frameworks, I apply solid foundations in{' '}
@@ -135,6 +139,23 @@ export default function About() {
             , and growing in today&rsquo;s fast-evolving tech landscape.
           </motion.p>
         </motion.div>
+        {/* <div className="flex justify-end">
+          <motion.a
+            href="#contact"
+            className="px-6 py-3 bg-[var(--light-accent)] text-[var(--dark-accent)] font-semibold rounded-2xl shadow-md hover:bg-[var(--dark-accent)] hover:text-[var(--light-accent)] transition-all duration-300 w-max md:w-[162px] text-center"
+            initial={{ opacity: 0, y: 30, scale: 0.9 }}
+            whileInView={{ opacity: 1, y: 0, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{
+              delay: 0.3,
+              duration: 0.8,
+              type: 'spring',
+              stiffness: 120,
+            }}
+          >
+            Contact
+          </motion.a>
+        </div> */}
       </div>
     </section>
   );
