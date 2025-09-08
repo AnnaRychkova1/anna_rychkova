@@ -1,7 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
-import { usePathname } from 'next/navigation';
+import { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 // import Icon from './Icon';
 import { FiMenu } from 'react-icons/fi';
@@ -10,30 +9,13 @@ interface NavLinkProps {
   href: string;
   text: string;
   isMobile?: boolean;
+  onClick?: React.MouseEventHandler<HTMLAnchorElement>;
 }
 
 export default function Header() {
-  const [isMobileMenuOpen, setIsMobileMenuMenuOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isBlurred, setIsBlurred] = useState(false);
-  const pathname = usePathname();
-
-  useEffect(() => {
-    if (pathname === '/' && window.location.hash) {
-      const id = window.location.hash.replace('#', '');
-      const element = document.getElementById(id);
-      if (element) {
-        const rootFontSize = parseFloat(
-          getComputedStyle(document.documentElement).fontSize
-        );
-        const yOffset = -(3.9 * rootFontSize);
-        const y =
-          element.getBoundingClientRect().top + window.scrollY + yOffset;
-        setTimeout(() => {
-          window.scrollTo({ top: y, behavior: 'smooth' });
-        }, 50);
-      }
-    }
-  }, [pathname]);
+  const menuRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -44,6 +26,19 @@ export default function Header() {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+        setIsMobileMenuOpen(false);
+      }
+    }
+    if (isMobileMenuOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+    }
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, [isMobileMenuOpen, menuRef]);
+
   return (
     <header
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300  ${
@@ -52,7 +47,7 @@ export default function Header() {
           : 'bg-[var(--dark-accent)] text-[var(--light-accent)]'
       }`}
     >
-      <div className="container header-container mx-auto flex justify-between items-center">
+      <div className="header-container mx-auto flex justify-between items-center">
         <a href="./" className="flex-shrink-0">
           {isBlurred ? (
             <Image
@@ -88,7 +83,7 @@ export default function Header() {
 
         {/* Mobile Toggle */}
         <button
-          onClick={() => setIsMobileMenuMenuOpen(!isMobileMenuOpen)}
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           className="lg:hidden focus:outline-none px-4"
           aria-label="Toggle navigation"
         >
@@ -115,14 +110,39 @@ export default function Header() {
 
       {/* Mobile Nav */}
       {isMobileMenuOpen && (
-        <div className="lg:hidden px-4 pb-4">
-          <ul className="flex flex-col gap-2 text-lg font-medium items-end list-none">
+        <div ref={menuRef} className="lg:hidden px-4 pb-4">
+          <ul className="flex flex-col gap-1 text-lg font-medium items-end list-none">
             {/* <NavLink href="#hero" text="Home" isMobile /> */}
-            <NavLink href="/#projects" text="Projects" />
-            <NavLink href="/#skills" text="Skills" />
-            <NavLink href="/#about" text="About" />
-            <NavLink href="/#education" text="Education" />
-            <NavLink href="/#contact" text="Contact" />
+            <NavLink
+              href="/#projects"
+              text="Projects"
+              isMobile
+              onClick={() => setIsMobileMenuOpen(false)}
+            />
+            <NavLink
+              href="/#skills"
+              text="Skills"
+              isMobile
+              onClick={() => setIsMobileMenuOpen(false)}
+            />
+            <NavLink
+              href="/#about"
+              text="About"
+              isMobile
+              onClick={() => setIsMobileMenuOpen(false)}
+            />
+            <NavLink
+              href="/#education"
+              text="Education"
+              isMobile
+              onClick={() => setIsMobileMenuOpen(false)}
+            />
+            <NavLink
+              href="/#contact"
+              text="Contact"
+              isMobile
+              onClick={() => setIsMobileMenuOpen(false)}
+            />
           </ul>
         </div>
       )}
@@ -130,31 +150,12 @@ export default function Header() {
   );
 }
 
-function NavLink({ href, text, isMobile = false }: NavLinkProps) {
-  const pathname = usePathname();
-  const handleClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
-    if (href.startsWith('/#')) {
-      if (pathname !== '/') return;
-
-      e.preventDefault();
-      const id = href.replace('/#', '');
-      const element = document.getElementById(id);
-      if (element) {
-        const rootFontSize = parseFloat(
-          getComputedStyle(document.documentElement).fontSize
-        );
-        const yOffset = -(3.9 * rootFontSize);
-        const y =
-          element.getBoundingClientRect().top + window.scrollY + yOffset;
-        window.scrollTo({ top: y, behavior: 'smooth' });
-      }
-    }
-  };
+function NavLink({ href, text, isMobile = false, onClick }: NavLinkProps) {
   return (
-    <li className="list-none">
+    <li className="list-none w-full text-right">
       <a
         href={href}
-        onClick={handleClick}
+        onClick={onClick}
         className={`px-4 py-2 rounded-full hover:text-[var(--darc-accent)] hover:drop-shadow-[0_1px_1px_#f9689d] transition ${isMobile ? 'block' : ''}`}
       >
         {text}

@@ -76,7 +76,7 @@ export default function Hero() {
           </div>
         ))}
       </div>
-      <div className="container relative z-10 flex flex-col justify-between items-center gap-6 h-[82vh] sm:h-[90vh]">
+      <div className="container relative z-10 flex flex-col justify-between items-center gap-6 h-[94vh] sm:h-[98vh]">
         <div className="mt-[12vh] sm:mt-[16vh] max-w-[90rem] w-[92%] flex flex-col items-center gap-8">
           <h1 className="text-4xl md:text-6xl font-bold text-center">
             Hi, I&rsquo;m
@@ -149,11 +149,7 @@ export default function Hero() {
               stiffness: 120,
             }}
           >
-            <FaDownload
-              width={22}
-              height={22}
-              // className="icon fill-[var(--dark-accent)] stroke-[var(--dark-accent)]"
-            />
+            <FaDownload width={22} height={22} />
             {/* <Icon
               iconName="Download"
               width={22}

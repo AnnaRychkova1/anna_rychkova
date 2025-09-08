@@ -6,7 +6,7 @@ import { MdLocationOn } from 'react-icons/md';
 export default function Footer() {
   return (
     <footer className="text-[var(--text-color)]">
-      <div className="container mx-auto flex flex-col md:flex-row justify-between md:items-center gap-4 md:gap-6">
+      <div className="footer-container mx-auto flex flex-col md:flex-row justify-between md:items-center gap-4 md:gap-6">
         <ul className="flex gap-4 md:justify-start items-center">
           <li>
             {' '}
@@ -14,7 +14,6 @@ export default function Footer() {
               href="https://github.com/AnnaRychkova1"
               target="_blank"
               rel="noopener noreferrer"
-              className="contact-link"
             >
               <FaGithub size={36} className="footer-icon" />
               {/* <Icon
@@ -31,7 +30,6 @@ export default function Footer() {
               href="https://www.linkedin.com/in/annarychkova1"
               target="_blank"
               rel="noopener noreferrer"
-              className="contact-link"
             >
               <FaLinkedin size={36} className="footer-icon" />
               {/* <Icon

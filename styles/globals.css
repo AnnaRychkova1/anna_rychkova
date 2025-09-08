@@ -13,7 +13,6 @@
 body {
   background-color: var(--bg);
   color: var(--text-color);
-  /* font-family: var(--font-inter), Arial, Helvetica, sans-serif; */
   font-family: var(--font-roboto), sans-serif;
   font-size: 1.15rem;
 }
@@ -40,7 +39,7 @@ p {
 }
 
 /* h1,
-h2 {
+h2, h3 {
   font-family: var(--font-allura), cursive;
 } */
 
@@ -56,39 +55,23 @@ ul {
 
 .container {
   max-width: 100%;
-  padding: 1.5rem 1rem;
+  padding: 5.5rem 1rem 0 1rem;
 }
 
 .header-container {
+  max-width: 100%;
   padding: 0.25rem 1rem;
+}
+
+.footer-container {
+  max-width: 100%;
+  padding: 1.5rem 1rem;
 }
 
 .logo {
   width: auto;
   height: auto;
 }
-
-/* .icon {
-  fill: var(--dark-accent);
-  stroke: var(--dark-accent);
-  transition: all 0.3s ease;
-}
-
-.icon:hover {
-  fill: var(--light-accent);
-  stroke: var(--light-accent);
-} */
-
-/* svg {
-  fill: var(--dark-accent);
-  stroke: var(--dark-accent);
-  transition: all 0.3s ease;
-}
-
-svg:hover {
-  fill: var(--light-accent);
-  stroke: var(--light-accent);
-} */
 
 .my-scroll-btn svg {
   fill: var(--light-accent);
@@ -101,40 +84,9 @@ svg:hover {
   stroke: var(--dark-accent);
 }
 
-/* .more-btn svg,
-.heart {
-  fill: var(--light-accent);
-  stroke: var(--light-accent);
-  transition: all 0.3s ease;
-}
-
-.more-btn:hover svg,
-.heart:hover {
-  filter: drop-shadow(0 1px 2px var(--light-accent));
-} */
-
 #hero {
-  padding-top: 5.5rem;
   margin: 0 auto;
-  margin-bottom: 2.25rem;
   height: 100vh;
-}
-
-/* #hero::before {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background-color: var(--light-accent);
-  opacity: 0.1;
-  pointer-events: none;
-} */
-
-.download-btn:hover svg {
-  fill: var(--light-accent);
-  stroke: var(--light-accent);
 }
 
 @media (min-width: 1024px) {
@@ -145,10 +97,14 @@ svg:hover {
   }
 
   .container {
-    padding: 2rem 1rem;
+    padding: 5.5rem 1rem 0 1rem;
   }
 
   .header-container {
     padding: 0.5rem 1rem;
+  }
+
+  .footer-container {
+    padding: 2rem 1rem;
   }
 }
