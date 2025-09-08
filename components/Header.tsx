@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { usePathname } from 'next/navigation';
 import Image from 'next/image';
 // import Icon from './Icon';
 import { FiMenu } from 'react-icons/fi';
@@ -14,6 +15,25 @@ interface NavLinkProps {
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuMenuOpen] = useState(false);
   const [isBlurred, setIsBlurred] = useState(false);
+  const pathname = usePathname();
+
+  useEffect(() => {
+    if (pathname === '/' && window.location.hash) {
+      const id = window.location.hash.replace('#', '');
+      const element = document.getElementById(id);
+      if (element) {
+        const rootFontSize = parseFloat(
+          getComputedStyle(document.documentElement).fontSize
+        );
+        const yOffset = -(3.9 * rootFontSize);
+        const y =
+          element.getBoundingClientRect().top + window.scrollY + yOffset;
+        setTimeout(() => {
+          window.scrollTo({ top: y, behavior: 'smooth' });
+        }, 50);
+      }
+    }
+  }, [pathname]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -111,8 +131,11 @@ export default function Header() {
 }
 
 function NavLink({ href, text, isMobile = false }: NavLinkProps) {
+  const pathname = usePathname();
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     if (href.startsWith('/#')) {
+      if (pathname !== '/') return;
+
       e.preventDefault();
       const id = href.replace('/#', '');
       const element = document.getElementById(id);
