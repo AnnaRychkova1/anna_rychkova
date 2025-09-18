@@ -2,11 +2,6 @@
 import { languages, frameworks, tools } from '../data/techStack';
 import { motion, Variants } from 'framer-motion';
 
-// const itemVariants = {
-//   hidden: { opacity: 0, y: 20 },
-//   visible: { opacity: 1, y: 0 },
-// };
-
 const containerVariants: Variants = {
   hidden: { opacity: 0, y: 40 },
   visible: {
@@ -27,7 +22,7 @@ const itemVariants: Variants = {
 
 export default function Skills() {
   return (
-    <section id="skills">
+    <section id="skills" className="scroll-mt-22">
       <div className="container flex flex-col gap-6">
         <h2 className="text-4xl md:text-6xl font-bold text-center">
           My Skills
@@ -43,7 +38,7 @@ export default function Skills() {
             <h3 className="text-3xl md:text-4xl font-bold text-center text-[var(--dark-accent)]">
               Languages
             </h3>
-            <ul className="skills-list">
+            <ul className="flex flex-wrap items-center justify-center gap-x-2 gap-y-4 rounded-[1.5rem] p-4 w-full">
               {languages.map(({ icon, name }) => (
                 <motion.li
                   key={name}
@@ -67,7 +62,7 @@ export default function Skills() {
             <h3 className="text-2xl md:text-4xl font-bold text-center text-[var(--dark-accent)]">
               Frameworks
             </h3>
-            <ul className="skills-list">
+            <ul className="flex flex-wrap items-center justify-center gap-x-2 gap-y-4 rounded-[1.5rem] p-4 w-full">
               {frameworks.map(({ icon, name }) => (
                 <motion.li
                   key={name}
@@ -92,7 +87,7 @@ export default function Skills() {
             <h3 className="text-2xl md:text-4xl font-bold text-center text-[var(--dark-accent)]">
               Tools
             </h3>
-            <ul className="skills-list">
+            <ul className="flex flex-wrap items-center justify-center gap-x-2 gap-y-4 rounded-[1.5rem] p-4 w-full">
               {tools.map(({ icon, name }) => (
                 <motion.li
                   key={name}

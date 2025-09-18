@@ -14,7 +14,7 @@ const itemVariants: Variants = {
 
 export default function Education() {
   return (
-    <section id="education">
+    <section id="education" className="scroll-mt-22">
       <div className="container flex flex-col gap-6  text-center">
         <h2 className="text-4xl md:text-6xl font-bold text-center">
           Education

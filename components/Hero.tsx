@@ -2,61 +2,19 @@
 
 import { motion } from 'framer-motion';
 import Lottie from 'lottie-react';
-import { JSX, useEffect, useState } from 'react';
+import { FiDownload } from 'react-icons/fi';
 
 import animationData from '@/data/cat.json';
 import { backgroundIcons } from '@/data/techStack';
-import { FiDownload } from 'react-icons/fi';
-
-type IconData = {
-  icon: JSX.Element;
-  top: number;
-  left: number;
-  size: string;
-};
+import { useGeneratedIcons } from '@/hooks/useGeneratedIcons';
 
 export default function Hero() {
-  const [icons, setIcons] = useState<IconData[]>([]);
-
-  useEffect(() => {
-    const minDistance = 8;
-    const maxAttempts = 50;
-    const generated: IconData[] = [];
-
-    backgroundIcons.forEach(({ icon }) => {
-      let top = 0;
-      let left = 0;
-      let attempts = 0;
-      let valid = false;
-
-      while (!valid && attempts < maxAttempts) {
-        top = Math.random() * 100;
-        left = Math.random() * 100;
-
-        valid = generated.every(({ top: t, left: l }) => {
-          const dx = t - top;
-          const dy = l - left;
-          const distance = Math.sqrt(dx * dx + dy * dy);
-          return distance >= minDistance;
-        });
-
-        attempts++;
-      }
-
-      // const size = `${Math.random() * (4 - 2) + 2}vw`;
-      // const size = `clamp(20px, ${Math.random() * (4 - 2) + 2}vw, 50px)`;
-      const size = `clamp(40px, ${Math.random() * (8 - 4) + 4}vw, 100px)`;
-
-      generated.push({ icon, top, left, size });
-    });
-
-    setIcons(generated);
-  }, []);
+  const icons = useGeneratedIcons(backgroundIcons);
 
   return (
     <section
       id="hero"
-      className="relative overflow-hidden shadow-md shadow-fuchsia-900/5"
+      className="relative overflow-hidden mx-auto h-screen shadow-md shadow-fuchsia-900/5 scroll-mt-22"
     >
       <div className="absolute inset-0 -z-10 opacity-5 overflow-hidden">
         {icons.map(({ icon, top, left, size }, i) => (
@@ -74,8 +32,8 @@ export default function Hero() {
           </div>
         ))}
       </div>
-      <div className="container relative z-10 flex flex-col justify-between items-center gap-6 h-[94vh] sm:h-[98vh]">
-        <div className="mt-[12vh] sm:mt-[16vh] max-w-[90rem] w-[92%] flex flex-col items-center gap-8">
+      <div className="container z-10 flex flex-col justify-between items-center gap-6 h-[94vh] sm:h-[98vh]">
+        <div className="pt-[calc(12vh+5.5rem)] sm:pt-[calc(16vh+5.5rem)] max-w-[90rem] w-[92%] flex flex-col items-center gap-8">
           <h1 className="text-4xl md:text-6xl font-bold text-center">
             Hi, I&rsquo;m
             <span className="text-[var(--dark-accent)]"> Anna Rychkova</span>

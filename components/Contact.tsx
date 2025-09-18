@@ -3,6 +3,8 @@ import { useEffect, useRef, useState } from 'react';
 import { motion, Variants } from 'framer-motion';
 import { MdOutlineSendToMobile } from 'react-icons/md';
 import { FaHourglassEnd } from 'react-icons/fa';
+import { useGeneratedIcons } from '@/hooks/useGeneratedIcons';
+import { backgroundIcons } from '@/data/techStack';
 
 interface FormData {
   name: string;
@@ -27,6 +29,7 @@ const itemVariants: Variants = {
 };
 
 export default function Contact() {
+  const icons = useGeneratedIcons(backgroundIcons);
   const [form, setForm] = useState<FormData>({
     name: '',
     email: '',
@@ -147,8 +150,24 @@ export default function Contact() {
   }, [form.message]);
 
   return (
-    <section id="contact">
-      <div className="container flex flex-col gap-6 text-center">
+    <section id="contact" className="relative scroll-mt-22">
+      <div className="absolute inset-0 -z-10 opacity-5 overflow-hidden">
+        {icons.map(({ icon, top, left, size }, i) => (
+          <div
+            key={i}
+            className="absolute transition-all duration-300"
+            style={{
+              top: `${top}%`,
+              left: `${left}%`,
+              fontSize: size,
+              transform: 'translate(-50%, -50%)',
+            }}
+          >
+            {icon}
+          </div>
+        ))}
+      </div>
+      <div className="container min-h-[calc(100vh-240px)] md:min-h-[calc(100vh-160px)] z-10 flex flex-col text-center justify-evenly">
         <h2 className="text-4xl md:text-6xl font-bold text-center">
           Contact me
         </h2>
@@ -156,59 +175,61 @@ export default function Contact() {
         <motion.form
           onSubmit={handleSubmit}
           noValidate
-          className="max-w-xl w-full mx-auto space-y-4 flex flex-col gap-6 mt-4"
+          className="w-full mx-auto flex flex-col mt-6"
           variants={containerVariants}
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, amount: 0.2 }}
         >
-          <div className="relative">
-            <label htmlFor="name" className="sr-only">
-              Name
-            </label>
-            <motion.input
-              variants={itemVariants}
-              id="email"
-              name="name"
-              type="text"
-              placeholder="Name"
-              value={form.name}
-              onChange={handleChange}
-              onBlur={handleBlur}
-              onFocus={handleFocus}
-              required
-              className="w-full py-2 px-4 border-2 border-[rgba(115,7,66,0.1)] focus:border-[rgba(115,7,66,0.3)] focus:outline-none rounded-xl shadow-md shadow-fuchsia-900/10 transition-all duration-300"
-            />
-            {errors.name && (
-              <p className="absolute bottom-[-24px] left-0 text-[var(--light-accent)] text-[1rem] transition-all duration-300">
-                {errors.name}
-              </p>
-            )}
+          <div className="flex flex-col md:flex-row w-full mb-0 md:gap-6">
+            <div className="relative w-full mb-[2rem]">
+              <label htmlFor="name" className="sr-only">
+                Name
+              </label>
+              <motion.input
+                variants={itemVariants}
+                id="email"
+                name="name"
+                type="text"
+                placeholder="Name"
+                value={form.name}
+                onChange={handleChange}
+                onBlur={handleBlur}
+                onFocus={handleFocus}
+                required
+                className="w-full py-2 px-4 border-2 border-[rgba(115,7,66,0.1)] focus:border-[rgba(115,7,66,0.3)] focus:outline-none rounded-xl shadow-md shadow-fuchsia-900/10 transition-all duration-300 bg-[var(--bg)]"
+              />
+              {errors.name && (
+                <p className="absolute bottom-[-24px] left-0 text-[var(--light-accent)] text-[1rem] transition-all duration-300">
+                  {errors.name}
+                </p>
+              )}
+            </div>
+            <div className="relative w-full mb-[2rem]">
+              <label htmlFor="email" className="sr-only">
+                Email
+              </label>
+              <motion.input
+                variants={itemVariants}
+                id="email"
+                name="email"
+                type="email"
+                placeholder="Email"
+                value={form.email}
+                onChange={handleChange}
+                onBlur={handleBlur}
+                onFocus={handleFocus}
+                className="w-full py-2 px-4 border-2 border-[rgba(115,7,66,0.1)] focus:border-[rgba(115,7,66,0.3)] focus:outline-none  rounded-xl shadow-md shadow-fuchsia-900/10 transition-all duration-300 bg-[var(--bg)]"
+                required
+              />
+              {errors.email && (
+                <p className="absolute bottom-[-24px] left-0 text-[var(--light-accent)] text-[1rem] transition-all duration-300">
+                  {errors.email}
+                </p>
+              )}
+            </div>
           </div>
-          <div className="relative">
-            <label htmlFor="email" className="sr-only">
-              Email
-            </label>
-            <motion.input
-              variants={itemVariants}
-              id="email"
-              name="email"
-              type="email"
-              placeholder="Email"
-              value={form.email}
-              onChange={handleChange}
-              onBlur={handleBlur}
-              onFocus={handleFocus}
-              className="w-full py-2 px-4 border-2 border-[rgba(115,7,66,0.1)] focus:border-[rgba(115,7,66,0.3)] focus:outline-none  rounded-xl shadow-md shadow-fuchsia-900/10 transition-all duration-300"
-              required
-            />
-            {errors.email && (
-              <p className="absolute bottom-[-24px] left-0 text-[var(--light-accent)] text-[1rem] transition-all duration-300">
-                {errors.email}
-              </p>
-            )}
-          </div>
-          <div className="relative">
+          <div className="relative mb-[2rem]">
             <label htmlFor="message" className="sr-only">
               Message
             </label>
@@ -222,7 +243,7 @@ export default function Contact() {
               onChange={handleChange}
               onBlur={handleBlur}
               onFocus={handleFocus}
-              className="w-full min-h-[128px] pt-2 pb-4 px-4 border-2 border-[rgba(115,7,66,0.1)] focus:border-[rgba(115,7,66,0.3)] focus:outline-none rounded-xl overflow-hidden resize-none shadow-md shadow-fuchsia-900/10 transition-all duration-300"
+              className="w-full min-h-[128px] pt-2 pb-4 px-4 border-2 border-[rgba(115,7,66,0.1)] focus:border-[rgba(115,7,66,0.3)] focus:outline-none rounded-xl overflow-hidden resize-none shadow-md shadow-fuchsia-900/10 transition-all duration-300 bg-[var(--bg)]"
               required
             />
             {errors.message && (
@@ -231,31 +252,45 @@ export default function Contact() {
               </p>
             )}
           </div>
-          <div className="flex justify-end">
-            <motion.button
-              type="submit"
-              className="inline-flex items-center justify-center gap-3 px-6 py-3 bg-[var(--light-accent)] text-[var(--dark-accent)] font-semibold rounded-2xl shadow-md hover:bg-[var(--dark-accent)] hover:text-[var(--light-accent)] transition-all duration-300 w-max md:w-[162px] text-center"
-              initial={{ opacity: 0, y: 30, scale: 0.9 }}
-              whileInView={{ opacity: 1, y: 0, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{
-                delay: 0.3,
-                duration: 0.8,
-                type: 'spring',
-                stiffness: 120,
-              }}
-              disabled={sending}
-            >
-              {sending ? (
-                <>
-                  <FaHourglassEnd size={22} /> Sending
-                </>
-              ) : (
-                <>
-                  <MdOutlineSendToMobile size={22} /> Send
-                </>
-              )}
-            </motion.button>
+          <div className="flex justify-center flex-col-reverse gap-6 sm:flex-row sm:justify-between ml-2">
+            <div className="text-[var(--dark-accent)] font-bold flex items-center gap-2 justify-center mr-12 sm:mr-0">
+              <div className="relative w-12 h-12 flex items-center justify-center">
+                {/* Small Circle */}
+                <div className="w-3 h-3 bg-[var(--dark-accent)] rounded-full z-10 shadow-md shadow-fuchsia-900/5"></div>
+                {/* Big Pulsing Circle */}
+                <div className="absolute w-3 h-3 bg-[var(--light-accent)] rounded-full opacity-20 animate-pulse-scale z-0"></div>
+              </div>
+              <p className="text-[var(--dark-accent)] font-bold">
+                Available For Work
+              </p>
+            </div>
+
+            <div className="flex justify-center">
+              <motion.button
+                type="submit"
+                className="inline-flex items-center justify-center gap-3 px-6 py-3 bg-[var(--light-accent)] text-[var(--dark-accent)] font-semibold rounded-2xl shadow-md hover:bg-[var(--dark-accent)] hover:text-[var(--light-accent)] transition-all duration-300 w-max md:w-[162px] text-center"
+                initial={{ opacity: 0, y: 30, scale: 0.9 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{
+                  delay: 0.3,
+                  duration: 0.8,
+                  type: 'spring',
+                  stiffness: 120,
+                }}
+                disabled={sending}
+              >
+                {sending ? (
+                  <>
+                    <FaHourglassEnd size={22} /> Sending
+                  </>
+                ) : (
+                  <>
+                    <MdOutlineSendToMobile size={22} /> Send
+                  </>
+                )}
+              </motion.button>
+            </div>
           </div>
         </motion.form>
 

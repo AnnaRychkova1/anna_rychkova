@@ -55,7 +55,7 @@ export default function Header() {
               width={200}
               height={40}
               priority
-              className="logo"
+              className="w-auto h-auto"
             />
           ) : (
             <Image
@@ -64,7 +64,7 @@ export default function Header() {
               width={200}
               height={40}
               priority
-              className="logo"
+              className="w-auto h-auto"
             />
           )}
         </a>

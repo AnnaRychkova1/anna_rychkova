@@ -6,7 +6,7 @@ import { FaRegFolderOpen } from 'react-icons/fa';
 
 export default function Projects() {
   return (
-    <section id="projects">
+    <section id="projects" className="scroll-mt-21">
       <div className="container">
         <h2 className="text-4xl md:text-6xl font-bold text-center">
           My Projects

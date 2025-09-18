@@ -1,6 +1,4 @@
 @import 'tailwindcss';
-@import './hero.css';
-@import './footer.css';
 
 :root {
   --bg: #fef4f8;
@@ -54,7 +52,7 @@ ul {
 
 .container {
   max-width: 100%;
-  padding: 5.5rem 1rem 0 1rem;
+  padding: 1.5rem 1rem;
 }
 
 .header-container {
@@ -63,29 +61,59 @@ ul {
 }
 
 .footer-container {
-  max-width: 100%;
-  padding: 5.5rem 1rem 1.5rem 1rem;
+  padding-right: 56px;
 }
 
-.logo {
-  width: auto;
-  height: auto;
+.animate-pulse-scale {
+  animation: pulse-scale 2s infinite ease-in-out;
 }
 
-.my-scroll-btn svg {
-  fill: var(--light-accent);
-  stroke: var(--light-accent);
-  transition: all 0.3s ease;
+.heart {
+  animation: heartbeat 5s infinite ease-in-out;
 }
 
-.my-scroll-btn:hover svg {
-  fill: var(--dark-accent);
-  stroke: var(--dark-accent);
+@keyframes pulse-scale {
+  0% {
+    transform: scale(1);
+    opacity: 0.4;
+    box-shadow: 0 0 5px 2px rgba(115, 7, 66, 0.4);
+  }
+  50% {
+    transform: scale(5);
+    opacity: 0.05;
+    box-shadow: 0 0 20px 10px rgba(115, 7, 66, 0.2);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.4;
+    box-shadow: 0 0 5px 2px rgba(115, 7, 66, 0.4);
+  }
 }
 
-#hero {
-  margin: 0 auto;
-  height: 100vh;
+@keyframes heartbeat {
+  0%,
+  100% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.3));
+  }
+  25% {
+    transform: scale(1.15);
+    filter: drop-shadow(0 0 4px var(--light-accent));
+  }
+  50% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.3));
+  }
+  75% {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 3px var(--light-accent));
+  }
+}
+
+@media (min-width: 768px) {
+  .footer-container {
+    padding-right: 76px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -95,15 +123,7 @@ ul {
     padding: 0 2rem;
   }
 
-  .container {
-    padding: 5.5rem 1rem 0 1rem;
-  }
-
   .header-container {
     padding: 0.5rem 1rem;
-  }
-
-  .footer-container {
-    padding: 5.5rem 1rem 2rem 1rem;
   }
 }

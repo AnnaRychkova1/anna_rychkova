@@ -19,7 +19,7 @@ const paragraphVariants: Variants = {
 
 export default function About() {
   return (
-    <section id="about">
+    <section id="about" className="scroll-mt-22">
       <div className="container flex flex-col gap-6">
         <h2 className="text-4xl md:text-6xl font-bold text-center">About Me</h2>
         <motion.div
@@ -109,9 +109,9 @@ export default function About() {
             art. Just as I pay attention to details when{' '}
             <span className="text-[var(--dark-accent)] font-bold">
               painting
-            </span>{' '}
-            with my spouse, I apply the same dedication to building software
-            that is not only functional but also beautiful and impactful.
+            </span>
+            , I apply the same dedication to building software that is not only
+            functional but also beautiful and impactful.
           </motion.p>
           <motion.p variants={paragraphVariants}>
             My long-term goal is to{' '}
@@ -139,23 +139,6 @@ export default function About() {
             , and growing in today&rsquo;s fast-evolving tech landscape.
           </motion.p>
         </motion.div>
-        {/* <div className="flex justify-end">
-          <motion.a
-            href="#contact"
-            className="px-6 py-3 bg-[var(--light-accent)] text-[var(--dark-accent)] font-semibold rounded-2xl shadow-md hover:bg-[var(--dark-accent)] hover:text-[var(--light-accent)] transition-all duration-300 w-max md:w-[162px] text-center"
-            initial={{ opacity: 0, y: 30, scale: 0.9 }}
-            whileInView={{ opacity: 1, y: 0, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{
-              delay: 0.3,
-              duration: 0.8,
-              type: 'spring',
-              stiffness: 120,
-            }}
-          >
-            Contact
-          </motion.a>
-        </div> */}
       </div>
     </section>
   );
