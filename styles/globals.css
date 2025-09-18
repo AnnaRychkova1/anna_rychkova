@@ -64,6 +64,10 @@ ul {
   padding-right: 56px;
 }
 
+#projects {
+  padding-top: 1.5rem;
+}
+
 .animate-pulse-scale {
   animation: pulse-scale 2s infinite ease-in-out;
 }
