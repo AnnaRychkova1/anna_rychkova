@@ -1,15 +1,8 @@
 'use client';
-
 import { useState, useEffect, useRef } from 'react';
-import Image from 'next/image';
 import { FiMenu } from 'react-icons/fi';
-
-interface NavLinkProps {
-  href: string;
-  text: string;
-  isMobile?: boolean;
-  onClick?: React.MouseEventHandler<HTMLAnchorElement>;
-}
+import Image from 'next/image';
+import type { NavLinkProps } from '@/types/types';
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);

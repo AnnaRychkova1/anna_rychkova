@@ -1,14 +1,18 @@
-export interface IconProps {
-  width?: number;
-  height?: number;
-  iconName: string;
-  viewBox?: string;
-  className?: string;
+export interface FormData {
+  name: string;
+  email: string;
+  message: string;
 }
 
-// export type IconData = {
-//   icon: JSX.Element;
-//   top: string;
-//   left: string;
-//   size: number;
-// };
+export interface FormErrors {
+  name?: string;
+  email?: string;
+  message?: string;
+}
+
+export interface NavLinkProps {
+  href: string;
+  text: string;
+  isMobile?: boolean;
+  onClick?: React.MouseEventHandler<HTMLAnchorElement>;
+}

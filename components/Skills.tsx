@@ -1,6 +1,6 @@
 'use client';
-import { languages, frameworks, tools } from '../data/techStack';
 import { motion, Variants } from 'framer-motion';
+import { languages, frameworks, tools } from '@/data/techStack';
 
 const containerVariants: Variants = {
   hidden: { opacity: 0, y: 40 },

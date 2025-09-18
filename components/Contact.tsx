@@ -3,20 +3,9 @@ import { useEffect, useRef, useState } from 'react';
 import { motion, Variants } from 'framer-motion';
 import { MdOutlineSendToMobile } from 'react-icons/md';
 import { FaHourglassEnd } from 'react-icons/fa';
+import type { FormData, FormErrors } from '@/types/types';
 import { useGeneratedIcons } from '@/hooks/useGeneratedIcons';
 import { backgroundIcons } from '@/data/techStack';
-
-interface FormData {
-  name: string;
-  email: string;
-  message: string;
-}
-
-interface FormErrors {
-  name?: string;
-  email?: string;
-  message?: string;
-}
 
 const containerVariants: Variants = {
   hidden: { opacity: 0 },

@@ -1,9 +1,7 @@
 'use client';
-
 import { motion } from 'framer-motion';
-import Lottie from 'lottie-react';
 import { FiDownload } from 'react-icons/fi';
-
+import Lottie from 'lottie-react';
 import animationData from '@/data/cat.json';
 import { backgroundIcons } from '@/data/techStack';
 import { useGeneratedIcons } from '@/hooks/useGeneratedIcons';

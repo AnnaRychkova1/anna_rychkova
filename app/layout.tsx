@@ -1,6 +1,6 @@
 import React from 'react';
-import '@/styles/globals.css';
 import { Inter, Roboto, Allura, Dancing_Script } from 'next/font/google';
+import '@/styles/globals.css';
 
 const inter = Inter({
   subsets: ['latin'],
