@@ -25,7 +25,7 @@ export default function Projects() {
               stiffness: 120,
             }}
           >
-            <FaRegFolderOpen width={22} height={22} />
+            <FaRegFolderOpen size={22} />
             View all
           </motion.a>
         </div>

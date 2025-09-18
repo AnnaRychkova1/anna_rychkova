@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-// import Icon from './Icon';
 import { HiArrowUp } from 'react-icons/hi';
 
 export default function ScrollToTopButton() {
@@ -28,13 +27,7 @@ export default function ScrollToTopButton() {
         visible ? 'opacity-100' : 'opacity-0 pointer-events-none'
       } w-12 h-12 md:w-14 md:h-14`}
     >
-      {/* <Icon
-        iconName="ArrowUp"
-        width={20}
-        height={20}
-        className="w-5 h-5 md:w-6 md:h-6"
-      /> */}
-      <HiArrowUp width={20} height={20} className="w-5 h-7 md:w-6 md:h-9" />
+      <HiArrowUp size={20} className="w-5 h-7 md:w-6 md:h-9" />
     </button>
   );
 }

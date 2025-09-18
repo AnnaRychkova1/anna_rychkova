@@ -2,7 +2,6 @@
 
 import { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
-// import Icon from './Icon';
 import { FiMenu } from 'react-icons/fi';
 
 interface NavLinkProps {
@@ -72,7 +71,6 @@ export default function Header() {
         {/* Desktop Nav */}
         <nav className="hidden lg:block text-lg 2xl:text-2xl font-medium ">
           <ul className="flex gap-2 list-none">
-            {/* <NavLink href="#hero" text="Home" /> */}
             <NavLink href="/#projects" text="Projects" />
             <NavLink href="/#skills" text="Skills" />
             <NavLink href="/#about" text="About" />
@@ -87,16 +85,6 @@ export default function Header() {
           className="lg:hidden focus:outline-none px-4"
           aria-label="Toggle navigation"
         >
-          {/* <Icon
-            iconName="More"
-            width={24}
-            height={24}
-            className={`w-9 h-10 transition-all duration-300 ${
-              isBlurred
-                ? 'fill-[var(--dark-accent)] stroke-[var(--dark-accent)] hover:drop-shadow-[0_1px_2px_var(--light-accent)]'
-                : 'fill-[var(--light-accent)] stroke-[var(--light-accent)] hover:drop-shadow-[0_1px_2px_var(--light-accent)]'
-            }`}
-          /> */}
           <FiMenu
             size={24}
             className={`w-9 h-10 transition-all duration-300 ${
@@ -112,7 +100,6 @@ export default function Header() {
       {isMobileMenuOpen && (
         <div ref={menuRef} className="lg:hidden px-4 pb-4">
           <ul className="flex flex-col gap-1 text-lg font-medium items-end list-none">
-            {/* <NavLink href="#hero" text="Home" isMobile /> */}
             <NavLink
               href="/#projects"
               text="Projects"

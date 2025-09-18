@@ -4,11 +4,9 @@ import { motion } from 'framer-motion';
 import Lottie from 'lottie-react';
 import { JSX, useEffect, useState } from 'react';
 
-// import Icon from './Icon';
-
 import animationData from '@/data/cat.json';
 import { backgroundIcons } from '@/data/techStack';
-import { FaDownload } from 'react-icons/fa';
+import { FiDownload } from 'react-icons/fi';
 
 type IconData = {
   icon: JSX.Element;
@@ -138,7 +136,7 @@ export default function Hero() {
           <motion.a
             href="/Anna_Rychkova_Software_Developer.pdf"
             download
-            className="inline-flex items-center justify-center gap-2  px-6 py-3 bg-[var(--light-accent)] text-[var(--dark-accent)] font-semibold rounded-2xl shadow-md hover:bg-[var(--dark-accent)] hover:text-[var(--light-accent)] transition-all duration-300 w-max md:w-[162px] text-center"
+            className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[var(--light-accent)] text-[var(--dark-accent)] font-semibold rounded-2xl shadow-md hover:bg-[var(--dark-accent)] hover:text-[var(--light-accent)] transition-all duration-300 w-max text-center"
             initial={{ opacity: 0, y: 30, scale: 0.9 }}
             whileInView={{ opacity: 1, y: 0, scale: 1 }}
             viewport={{ once: true }}
@@ -149,13 +147,7 @@ export default function Hero() {
               stiffness: 120,
             }}
           >
-            <FaDownload width={22} height={22} />
-            {/* <Icon
-              iconName="Download"
-              width={22}
-              height={22}
-              className="icon fill-[var(--dark-accent)] stroke-[var(--dark-accent)]"
-            /> */}
+            <FiDownload size={22} className="min-w-[22px] min-h-[22px]" />
             Download CV
           </motion.a>
         </div>

@@ -4,9 +4,7 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 1rem 0.5rem;
-  /* border: 2px double var(--light-accent); */
   border-radius: 1.5rem;
   padding: 1rem;
   width: 100%;
-  /* width: 264px; */
 }
