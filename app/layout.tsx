@@ -1,5 +1,6 @@
 import React from 'react';
 import { Inter, Roboto, Allura, Dancing_Script } from 'next/font/google';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import '@/styles/globals.css';
 
 const inter = Inter({
@@ -95,6 +96,7 @@ export default function RootLayout({
         className={`${inter.variable} ${roboto.variable} ${allura.variable} ${dancing.variable} antialiased`}
       >
         {children}
+        <SpeedInsights />
       </body>
     </html>
   );

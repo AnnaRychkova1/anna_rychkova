@@ -9,6 +9,14 @@ export default function Projects() {
         <h2 className="text-4xl md:text-6xl font-bold text-center">
           My Projects
         </h2>
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
         <div className="flex justify-end">
           <motion.a
             href="/projects"
