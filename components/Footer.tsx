@@ -12,6 +12,7 @@ export default function Footer() {
               href="https://github.com/AnnaRychkova1"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="GitHub"
             >
               <FaGithub
                 size={36}
@@ -24,6 +25,7 @@ export default function Footer() {
               href="https://www.linkedin.com/in/annarychkova1"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="LinkedIn"
             >
               <FaLinkedin
                 size={36}
@@ -36,6 +38,7 @@ export default function Footer() {
               href="mailto:anna.rychkova.dev@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Email"
             >
               <MdAlternateEmail
                 size={36}

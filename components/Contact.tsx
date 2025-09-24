@@ -156,15 +156,22 @@ export default function Contact() {
           </div>
         ))}
       </div>
-      <div className="container min-h-[calc(100vh-240px)] md:min-h-[calc(100vh-160px)] z-10 flex flex-col text-center justify-evenly">
-        <h2 className="text-4xl md:text-6xl font-bold text-center">
-          Contact me
-        </h2>
+      <div className="container min-h-[calc(100vh-240px)] md:min-h-[calc(100vh-160px)] z-10 flex flex-col gap-6 text-center justify-between">
+        <div className="flex flex-col gap-6 items-center">
+          {' '}
+          <h2 className="text-4xl md:text-6xl font-bold text-center">
+            Contact me
+          </h2>
+          <p className="text-center max-w-[86%]">
+            Feel free to contact me by submitting the form below and I will get
+            back to you as soon as possible
+          </p>
+        </div>
 
         <motion.form
           onSubmit={handleSubmit}
           noValidate
-          className="w-full mx-auto flex flex-col mt-6"
+          className="w-full mx-auto flex flex-col justify-center mt-6 min-h-[50vh]"
           variants={containerVariants}
           initial="hidden"
           whileInView="show"

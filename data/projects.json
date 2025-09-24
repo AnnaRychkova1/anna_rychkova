@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "name": "Attaboy Dog Training",
+    "images": [
+      "/images/attaboy-1.png",
+      "/images/attaboy-2.png",
+      "/images/attaboy-3.png",
+      "/images/attaboy-4.png"
+    ],
+    "type": "team",
+    "role": "team lead",
+    "overview": "The project began as a learning initiative. I led the development of the MVP and guided teammates in GitHub workflows. Later, the business owner invited me to improve and deploy it as the official site for his dog training business. Today, the site is live, serving real clients and supporting ongoing operations.",
+    "contribution": "Designed and developed the single-page public website with anchored sections for services, testimonials, and contact. Implemented the contact form with email notifications and built a separate admin dashboard to manage testimonials and client inquiries. Ensured a fully responsive, polished UI with interactive elements, configured ESLint for code quality, and deployed the project on Vercel with CI/CD.",
+    "github": "https://github.com/AnnaRychkova1/attaboy-dog-training",
+    "website": "https://attaboydogtraining.ie/",
+    "technologies": [
+      "Next.js",
+      "React",
+      "JavaScript",
+      "CSS",
+      "TailwindCSS",
+      "Firebase",
+      "Cloudinary",
+      "Nodemailer",
+      "Swiper",
+      "ESLint",
+      "Vercel"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "CodeCraft",
+    "images": [
+      "/images/code-craft-1.png",
+      "/images/code-craft-2.png",
+      "/images/code-craft-3.png",
+      "/images/code-craft-4.png"
+    ],
+
+    "type": "individual",
+    "role": "software developer",
+    "overview": "CodeCraft is a web application for practicing and testing programming skills in JavaScript, Python, and Java. It offers coding challenges and quizzes focused on algorithms and data structures, from basic to advanced exercises. Users can filter tasks by difficulty, language, and type. I developed both the public interface and the secure admin panel, ensuring a scalable, responsive, and engaging user experience.",
+    "contribution": "Designed and built a fully interactive platform with real-time code execution and instant feedback. Developed user registration, secure authentication, and an admin panel for managing tasks and quizzes, seeding the initial tasks into the database. Created tests to ensure functionality and stability. Ensured scalability, responsiveness, smooth user experience, code quality controls, and deployed the application to production, making it reliable for real-world use.",
+    "github": "https://github.com/AnnaRychkova1/CodeCraft",
+    "website": "https://code-craft-omega-eight.vercel.app/",
+    "technologies": [
+      "Next.js",
+      "React",
+      "JavaScript",
+      "TypeScript",
+      "CSS",
+      "TailwindCSS",
+      "Supabase",
+      "NextAuth.js",
+      "CodeMirror",
+      "Piston API",
+      "Recharts",
+      "SendGrid",
+      "Postman",
+      "Jest",
+      "React Testing Library",
+      "ESLint",
+      "Vercel"
+    ]
+  }
+]
