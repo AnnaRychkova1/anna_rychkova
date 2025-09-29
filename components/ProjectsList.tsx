@@ -5,19 +5,29 @@ import { FaGithub } from 'react-icons/fa';
 import { FaPerson } from 'react-icons/fa6';
 import { FaPeopleGroup } from 'react-icons/fa6';
 import { AiOutlineGlobal } from 'react-icons/ai';
+import { motion, Variants } from 'framer-motion';
 import Image from 'next/image';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import projects from '../data/projects.json';
 
+const cardVariants: Variants = {
+  hidden: { opacity: 0, y: 50 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' } },
+};
+
 export default function ProjectsList() {
   return (
     <ul className="flex flex-col gap-4">
       {projects.map(project => (
-        <li
+        <motion.li
           key={project.id}
           className="grid grid-cols-1 lg:grid-cols-2 gap-6 justify-between shadow-md shadow-fuchsia-900/5 mt-6 rounded-2xl"
+          variants={cardVariants}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.2 }}
         >
           <div className="w-full p-4">
             <Swiper
@@ -121,7 +131,7 @@ export default function ProjectsList() {
               ))}
             </ul>
           </div>
-        </li>
+        </motion.li>
       ))}
     </ul>
   );
