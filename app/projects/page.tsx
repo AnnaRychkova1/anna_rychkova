@@ -90,16 +90,6 @@ export default function Projects() {
                 </li>
                 <li>
                   <a
-                    href="https://annarychkova1.github.io/ecommerce/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-[var(--dark-accent)] hover:underline"
-                  >
-                    Ecommerce
-                  </a>
-                </li>
-                <li>
-                  <a
                     href="https://kaguasbest.github.io/DreamYachts/"
                     target="_blank"
                     rel="noopener noreferrer"
