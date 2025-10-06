@@ -4,26 +4,34 @@ import { Navigation, Pagination } from 'swiper/modules';
 import { FaGithub } from 'react-icons/fa';
 import { FaPerson } from 'react-icons/fa6';
 import { FaPeopleGroup } from 'react-icons/fa6';
-import { AiOutlineGlobal } from 'react-icons/ai';
+import { AiOutlineGlobal, AiOutlinePlayCircle } from 'react-icons/ai';
 import { motion, Variants } from 'framer-motion';
 import Image from 'next/image';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import projects from '../data/projects.json';
+
+import { SiSwagger } from 'react-icons/si';
+import { useEffect, useState } from 'react';
+import { ProjectsProp } from '@/types/types';
 
 const cardVariants: Variants = {
   hidden: { opacity: 0, y: 50 },
   show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' } },
 };
 
-export default function ProjectsList() {
+export default function ProjectsList({ projects }: ProjectsProp) {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
   return (
     <ul className="flex flex-col gap-4">
       {projects.map(project => (
         <motion.li
           key={project.id}
-          className="grid grid-cols-1 lg:grid-cols-2 gap-6 justify-between shadow-md shadow-fuchsia-900/5 mt-6 rounded-2xl"
+          className="grid grid-cols-1 lg:grid-cols-2 gap-6 justify-between shadow-md shadow-fuchsia-900/5 mt-6 rounded-2xl pb-6"
           variants={cardVariants}
           initial="hidden"
           whileInView="show"
@@ -55,7 +63,7 @@ export default function ProjectsList() {
             </Swiper>
           </div>
 
-          <div className="flex flex-col gap-4 p-4 pt-0 text-base lg:text-xl">
+          <div className="flex flex-col gap-4 p-4 pt-0 text-base xl:text-xl">
             <div className="flex justify-end mr-4 items-center">
               <h3 className=" w-full text-3xl md:text-4xl font-bold text-center text-[var(--dark-accent)]">
                 {project.name}
@@ -89,34 +97,88 @@ export default function ProjectsList() {
                 <p className="capitalize">
                   <span className="font-bold">Role:</span> {project.role}
                 </p>
-                <ul className="flex gap-4 md:justify-start items-center">
-                  <li>
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="GitHub"
-                    >
-                      <FaGithub
-                        size={24}
-                        className="transition-all duration-300 ease-in-out fill-[var(--dark-accent)] stroke-[var(--dark-accent)] hover:fill-[var(--light-accent)] hover:stroke-[var(--light-accent)]"
-                      />
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href={project.website}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="Website"
-                    >
-                      <AiOutlineGlobal
-                        size={26}
-                        className="transition-all duration-300 ease-in-out fill-[var(--dark-accent)] stroke-[var(--dark-accent)] hover:fill-[var(--light-accent)] hover:stroke-[var(--light-accent)]"
-                      />
-                    </a>
-                  </li>
-                </ul>
+                {mounted && (
+                  <ul className="flex gap-4 md:justify-start items-center">
+                    {[
+                      {
+                        url: project.links.github,
+                        icon: (
+                          <FaGithub
+                            size={24}
+                            className="transition-all duration-300 ease-in-out fill-[var(--dark-accent)] stroke-[var(--dark-accent)] hover:fill-[var(--light-accent)] hover:stroke-[var(--light-accent)]"
+                          />
+                        ),
+                        label: 'GitHub',
+                      },
+                      {
+                        url: project.links.githubFrontend,
+                        icon: (
+                          <FaGithub
+                            size={24}
+                            className="transition-all duration-300 ease-in-out fill-[var(--dark-accent)] stroke-[var(--dark-accent)] hover:fill-[var(--light-accent)] hover:stroke-[var(--light-accent)]"
+                          />
+                        ),
+                        label: 'GitHub Front End',
+                      },
+                      {
+                        url: project.links.githubBackend,
+                        icon: (
+                          <FaGithub
+                            size={24}
+                            className="transition-all duration-300 ease-in-out fill-[var(--dark-accent)] stroke-[var(--dark-accent)] hover:fill-[var(--light-accent)] hover:stroke-[var(--light-accent)]"
+                          />
+                        ),
+                        label: 'GitHub Back End',
+                      },
+                      {
+                        url: project.links.website,
+                        icon: (
+                          <AiOutlineGlobal
+                            size={26}
+                            className="transition-all duration-300 ease-in-out fill-[var(--dark-accent)] stroke-[var(--dark-accent)] hover:fill-[var(--light-accent)] hover:stroke-[var(--light-accent)]"
+                          />
+                        ),
+                        label: 'Website',
+                      },
+                      {
+                        url: project.links.demo,
+                        icon: (
+                          <AiOutlinePlayCircle
+                            size={26}
+                            className="transition-all duration-300 ease-in-out fill-[var(--dark-accent)] stroke-[var(--dark-accent)] hover:fill-[var(--light-accent)] hover:stroke-[var(--light-accent)]"
+                          />
+                        ),
+                        label: 'Demo',
+                      },
+                      {
+                        url: project.links.swagger,
+                        icon: (
+                          <SiSwagger
+                            size={24}
+                            className="transition-all duration-300 ease-in-out fill-[var(--dark-accent)] stroke-[var(--dark-accent)] hover:fill-[var(--light-accent)] hover:stroke-[var(--light-accent)]"
+                          />
+                        ),
+                        label: 'Swagger',
+                      },
+                    ]
+                      .filter(link => link.url)
+                      .map((link, index) => (
+                        <li key={index} className="relative group">
+                          <a
+                            href={link.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label={link.label}
+                          >
+                            {link.icon}
+                          </a>
+                          <span className="absolute bottom-full mb-2 hidden w-max rounded bg-[rgba(253,216,229,0.9)] px-2 py-1 text-sm text-[var(--dark-accent)] font-medium shadow-lg group-hover:block whitespace-nowrap">
+                            {link.label}
+                          </span>
+                        </li>
+                      ))}
+                  </ul>
+                )}
               </div>
             </div>
 

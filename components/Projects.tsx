@@ -2,16 +2,18 @@
 import { motion } from 'framer-motion';
 import { FaRegFolderOpen } from 'react-icons/fa';
 import ProjectsList from './ProjectsList';
+import projects from '../data/projects.json';
 
 export default function Projects() {
+  const featuredProjects = projects.slice(0, 3);
   return (
     <section id="projects" className="scroll-mt-15">
       <div className="container flex flex-col gap-6">
         <h2 className="text-4xl md:text-6xl font-bold text-center">
           My Projects
         </h2>
-        <ProjectsList />
-        <div className="flex justify-end">
+        <ProjectsList projects={featuredProjects} />
+        <div className="flex justify-end pt-4">
           <motion.a
             href="/projects"
             className="inline-flex items-center justify-center gap-3 px-6 py-3 bg-[var(--light-accent)] text-[var(--dark-accent)] font-semibold rounded-2xl shadow-md hover:bg-[var(--dark-accent)] hover:text-[var(--light-accent)] transition-all duration-300 w-max md:min-w-[162px] text-center"

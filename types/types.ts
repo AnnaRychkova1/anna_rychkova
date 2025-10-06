@@ -25,7 +25,17 @@ export interface Project {
   type: string;
   overview: string;
   contribution: string;
-  github: string;
-  website: string;
+  links: {
+    github?: string;
+    githubFrontend?: string;
+    githubBackend?: string;
+    website?: string;
+    demo?: string;
+    swagger?: string;
+  };
   technologies: string[];
+}
+
+export interface ProjectsProp {
+  projects: Project[];
 }

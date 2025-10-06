@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import ProjectsList from '@/components/ProjectsList';
+import projects from '../../data/projects.json';
 
 export default function Projects() {
   return (
@@ -15,7 +16,7 @@ export default function Projects() {
             <h2 className="text-4xl md:text-6xl font-bold text-center">
               My Projects
             </h2>
-            <ProjectsList />
+            <ProjectsList projects={projects} />
             <motion.div
               className="text-center text-lg text-gray-600 flex flex-col gap-2"
               initial={{ opacity: 0 }}
@@ -28,16 +29,6 @@ export default function Projects() {
                 such as:
               </p>
               <ul className="flex flex-col gap-1">
-                <li>
-                  <a
-                    href="https://annarychkova1.github.io/GardenShop/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-[var(--dark-accent)] hover:underline"
-                  >
-                    Garden Shop
-                  </a>
-                </li>
                 <li>
                   <a
                     href="https://annarychkova1.github.io/EnergyFlowWeb/"
@@ -58,16 +49,7 @@ export default function Projects() {
                     Misto Hub
                   </a>
                 </li>
-                <li>
-                  <a
-                    href="https://aquatrack-front-1.vercel.app/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-[var(--dark-accent)] hover:underline"
-                  >
-                    Aqua Track
-                  </a>
-                </li>
+
                 <li>
                   <a
                     href="https://camperrent.netlify.app/"
@@ -76,16 +58,6 @@ export default function Projects() {
                     className="text-[var(--dark-accent)] hover:underline"
                   >
                     Camper Rent
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://github.com/AnnaRychkova1/smart-recruitment-grpc"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-[var(--dark-accent)] hover:underline"
-                  >
-                    Smart Recruitment
                   </a>
                 </li>
                 <li>
@@ -118,16 +90,7 @@ export default function Projects() {
                     Countries
                   </a>
                 </li>
-                <li>
-                  <a
-                    href="https://gallery-typescript.vercel.app/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-[var(--dark-accent)] hover:underline"
-                  >
-                    Gallery
-                  </a>
-                </li>
+
                 <li>
                   <a
                     href="https://movies-redux-coral.vercel.app/"

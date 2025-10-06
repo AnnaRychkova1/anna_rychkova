@@ -56,7 +56,7 @@ export const metadata = {
     siteName: 'Anna Rychkova Portfolio',
     images: [
       {
-        url: '/logo_rectangle.png',
+        url: '/images/logo_rectangle_tr.png',
         width: 800,
         height: 600,
         alt: 'Anna Rychkova Logo',
@@ -70,7 +70,7 @@ export const metadata = {
     title: 'Anna Rychkova | Software Developer',
     description:
       'Portfolio of Anna Rychkova – software engineer and web developer.',
-    images: ['/logo_rectangle.png'],
+    images: ['/images/logo_rectangle_tr.png'],
   },
   robots: {
     index: true,

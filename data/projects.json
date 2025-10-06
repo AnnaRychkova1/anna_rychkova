@@ -10,10 +10,13 @@
     ],
     "type": "team",
     "role": "team lead",
-    "overview": "The project began as a learning initiative. I led the development of the MVP and guided teammates in GitHub workflows. Later, the business owner invited me to improve and deploy it as the official site for his dog training business. Today, the site is live, serving real clients and supporting ongoing operations.",
+    "overview": "The project started as a learning initiative. I led the development of the MVP and guided teammates in GitHub workflows. Later, the business owner invited me to enhance and deploy it as the official website for his dog training business. Today, the responsive site is live, serving real clients and supporting ongoing operations.",
     "contribution": "Designed and developed the single-page public website with anchored sections for services, testimonials, and contact. Implemented the contact form with email notifications and built a separate admin dashboard to manage testimonials and client inquiries. Ensured a fully responsive, polished UI with interactive elements, configured ESLint for code quality, and deployed the project on Vercel with CI/CD.",
-    "github": "https://github.com/AnnaRychkova1/attaboy-dog-training",
-    "website": "https://attaboydogtraining.ie/",
+    "links": {
+      "github": "https://github.com/AnnaRychkova1/attaboy-dog-training",
+      "website": "https://attaboydogtraining.ie/"
+    },
+
     "technologies": [
       "Next.js",
       "React",
@@ -40,10 +43,12 @@
 
     "type": "individual",
     "role": "software developer",
-    "overview": "CodeCraft is a web application for practicing and testing programming skills in JavaScript, Python, and Java. It offers coding challenges and quizzes focused on algorithms and data structures, from basic to advanced exercises. Users can filter tasks by difficulty, language, and type. I developed both the public interface and the secure admin panel, ensuring a scalable, responsive, and engaging user experience.",
+    "overview": "CodeCraft is a web application for practicing and testing programming skills in JavaScript, Python, and Java. It offers coding challenges and quizzes on algorithms and data structures, from basic to advanced levels. Users can filter tasks by difficulty, language, and type. The app features a responsive design and an engaging interface. I developed both the public interface and the secure admin panel, ensuring a scalable and user-friendly experience.",
     "contribution": "Designed and built a fully interactive platform with real-time code execution and instant feedback. Developed user registration, secure authentication, and an admin panel for managing tasks and quizzes, seeding the initial tasks into the database. Created tests to ensure functionality and stability. Ensured scalability, responsiveness, smooth user experience, code quality controls, and deployed the application to production, making it reliable for real-world use.",
-    "github": "https://github.com/AnnaRychkova1/CodeCraft",
-    "website": "https://code-craft-omega-eight.vercel.app/",
+    "links": {
+      "github": "https://github.com/AnnaRychkova1/CodeCraft",
+      "website": "https://code-craft-omega-eight.vercel.app/"
+    },
     "technologies": [
       "Next.js",
       "React",
@@ -63,6 +68,122 @@
       "React Testing Library",
       "ESLint",
       "Vercel"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "AquaTrack",
+    "images": [
+      "/images/aquatrack-1.png",
+      "/images/aquatrack-2.png",
+      "/images/aquatrack-3.png",
+      "/images/aquatrack-4.png"
+    ],
+    "type": "team",
+    "role": "team lead",
+    "overview": "AquaTrack is a modern web application that helps users track their daily water intake and maintain a healthy lifestyle. The app features a responsive UI, an integrated guide, and allows users to log their daily water consumption, set personalized hydration goals, and monitor their progress with detailed statistics. AquaTrack serves as a personal assistant to help users stay hydrated and meet their daily targets.",
+    "contribution": "As the Team Lead, I oversaw project planning, code reviews, and GitHub repository management. As the Frontend Developer, I implemented authentication features, including email verification, password management, and Google Authentication, as well as ISO-compliant time handling. On the Backend side, I created and documented API endpoints using Swagger, ensuring clear and maintainable documentation for the team.",
+    "links": {
+      "githubFrontend": "https://github.com/AnnaRychkova1/aquatrack-front-1",
+      "githubBackend": "https://github.com/AnnaRychkova1/aquatrack-back-1",
+      "website": "https://aquatrack-front-1.vercel.app/",
+      "demo": "https://res.cloudinary.com/dmzsusenh/video/upload/v1759782287/2025-10-06_21-21-15_sy4hzr.mkv",
+      "swagger": "https://aquatrack-back-1.onrender.com/api-docs/"
+    },
+    "technologies": [
+      "React",
+      "JavaScript",
+      "Redux",
+      "Recharts",
+      "HTML",
+      "CSS",
+      "i18next",
+      "Helmet",
+      "Formik",
+      "Yup",
+      "React-toastify",
+      "Rreactour",
+      "Cloudinary",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Mongoose",
+      "Morgan",
+      "CORS",
+      "Joi",
+      "Multer",
+      "SendGrid",
+      "Swagger",
+      "JWT",
+      "Axios",
+      "Vite",
+      "ESLint",
+      "Vercel"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Smart Recruitment System",
+    "images": [
+      "/images/smart-recruitment-1.png",
+      "/images/smart-recruitment-2.png",
+      "/images/smart-recruitment-3.png",
+      "/images/smart-recruitment-4.png",
+      "/images/smart-recruitment-5.png",
+      "/images/smart-recruitment-6.png",
+      "/images/smart-recruitment-7.png"
+    ],
+    "type": "team",
+    "role": "fullstack developer",
+    "overview": "Smart Recruitment System is a distributed application for managing the full recruitment pipeline: candidate registration, AI-assisted CV analysis, filtering, interview scheduling, and user authentication. It leverages Node.js, gRPC, Express, and MongoDB with a dynamic EJS frontend.",
+    "contribution": "Designed and implemented a modular microservices architecture with gRPC and HTTP endpoints. Developed Auth Service with JWT authentication, Hiring Service for CRUD operations and AI-based CV processing, Filtering Service for candidate evaluation, and Interview Service for scheduling. Built a dynamic EJS frontend with AJAX for interactivity. Documented APIs and project structure for maintainability and scalability.",
+    "links": {
+      "github": "https://github.com/AnnaRychkova1/smart-recruitment-grpc",
+      "demo": "https://res.cloudinary.com/dmzsusenh/video/upload/v1759780854/2025-10-06_20-52-40_xl67us.mkv"
+    },
+    "technologies": [
+      "openai",
+      "Node.js",
+      "Express",
+      "gRPC",
+      "MongoDB",
+      "Mongoose",
+      "EJS",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "bcrypt",
+      "JWT",
+      "Multer",
+      "pdf-parse",
+      "Concurrently"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "GardenShop",
+    "images": [
+      "/images/garden-shop-1.png",
+      "/images/garden-shop-2.png",
+      "/images/garden-shop-3.png",
+      "/images/garden-shop-4.png"
+    ],
+    "type": "individual",
+    "role": "frontend developer",
+    "overview": "GardenShop is a responsive web application for showcasing and selling garden plants. It provides a complete browsing and shopping experience, including plant catalog, product details, real-time cart management, and a contact page with validation and map integration.",
+    "contribution": "Designed and developed the entire front-end using HTML, CSS, and JavaScript. Implemented plant cards sourced from JSON, search and filter functionality, Bootstrap-based image carousel, modal view for enlarged images, and discount labeling. Built real-time cart updates using Local Storage and a validated contact form. Ensured a fully responsive layout and smooth user experience across devices.",
+    "links": {
+      "github": "https://github.com/AnnaRychkova1/GardenShop",
+      "website": "https://annarychkova1.github.io/GardenShop/"
+    },
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Bootstrap",
+      "LocalStorage",
+      "JSON",
+      "GitHub Pages"
     ]
   }
 ]
