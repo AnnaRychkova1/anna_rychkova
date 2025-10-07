@@ -87,7 +87,7 @@
       "githubFrontend": "https://github.com/AnnaRychkova1/aquatrack-front-1",
       "githubBackend": "https://github.com/AnnaRychkova1/aquatrack-back-1",
       "website": "https://aquatrack-front-1.vercel.app/",
-      "demo": "https://res.cloudinary.com/dmzsusenh/video/upload/v1759782287/2025-10-06_21-21-15_sy4hzr.mkv",
+      "demo": "https://res.cloudinary.com/dmzsusenh/video/upload/f_mp4/v1759782287/2025-10-06_21-21-15_sy4hzr.mkv",
       "swagger": "https://aquatrack-back-1.onrender.com/api-docs/"
     },
     "technologies": [
@@ -133,13 +133,13 @@
       "/images/smart-recruitment-6.png",
       "/images/smart-recruitment-7.png"
     ],
-    "type": "team",
+    "type": "individual",
     "role": "fullstack developer",
     "overview": "Smart Recruitment System is a distributed application for managing the full recruitment pipeline: candidate registration, AI-assisted CV analysis, filtering, interview scheduling, and user authentication. It leverages Node.js, gRPC, Express, and MongoDB with a dynamic EJS frontend.",
     "contribution": "Designed and implemented a modular microservices architecture with gRPC and HTTP endpoints. Developed Auth Service with JWT authentication, Hiring Service for CRUD operations and AI-based CV processing, Filtering Service for candidate evaluation, and Interview Service for scheduling. Built a dynamic EJS frontend with AJAX for interactivity. Documented APIs and project structure for maintainability and scalability.",
     "links": {
       "github": "https://github.com/AnnaRychkova1/smart-recruitment-grpc",
-      "demo": "https://res.cloudinary.com/dmzsusenh/video/upload/v1759780854/2025-10-06_20-52-40_xl67us.mkv"
+      "demo": "https://res.cloudinary.com/dmzsusenh/video/upload/f_mp4/v1759780854/2025-10-06_20-52-40_xl67us.mkv"
     },
     "technologies": [
       "openai",
