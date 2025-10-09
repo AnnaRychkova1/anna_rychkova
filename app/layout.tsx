@@ -2,6 +2,7 @@ import React from 'react';
 import { Inter, Roboto, Allura, Dancing_Script } from 'next/font/google';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import '@/styles/globals.css';
+import GoogleAnalytics from '@/components/GoogleAnalytics';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -91,13 +92,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${inter.variable} ${roboto.variable} ${allura.variable} ${dancing.variable} antialiased`}
-      >
-        {children}
-        <SpeedInsights />
-      </body>
-    </html>
+    <>
+      <GoogleAnalytics />
+      <html lang="en">
+        <body
+          className={`${inter.variable} ${roboto.variable} ${allura.variable} ${dancing.variable} antialiased`}
+        >
+          {children}
+          <SpeedInsights />
+        </body>
+      </html>
+    </>
   );
 }
