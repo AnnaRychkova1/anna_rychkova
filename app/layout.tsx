@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import { Inter, Roboto, Allura, Dancing_Script } from 'next/font/google';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import '@/styles/globals.css';
@@ -93,7 +93,9 @@ export default function RootLayout({
 }>) {
   return (
     <>
-      <GoogleAnalytics />
+      <Suspense fallback={null}>
+        <GoogleAnalytics />
+      </Suspense>
       <html lang="en">
         <body
           className={`${inter.variable} ${roboto.variable} ${allura.variable} ${dancing.variable} antialiased`}
