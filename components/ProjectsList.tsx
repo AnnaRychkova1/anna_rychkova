@@ -21,6 +21,9 @@ const cardVariants: Variants = {
 };
 
 export default function ProjectsList({ projects }: ProjectsProp) {
+  const [showTooltip, setShowTooltip] = useState<{ [key: string]: boolean }>(
+    {}
+  );
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -68,7 +71,15 @@ export default function ProjectsList({ projects }: ProjectsProp) {
               <h3 className=" w-full text-3xl md:text-4xl font-bold text-center text-[var(--dark-accent)]">
                 {project.name}
               </h3>
-              <div className="relative flex items-center gap-2 group">
+              <div
+                className="relative flex items-center gap-2 group"
+                onClick={() =>
+                  setShowTooltip(prev => ({
+                    ...prev,
+                    [project.id]: !prev[project.id],
+                  }))
+                }
+              >
                 {project.type === 'individual' ? (
                   <FaPerson className="text-[var(--dark-accent)]" size={22} />
                 ) : (
@@ -79,7 +90,9 @@ export default function ProjectsList({ projects }: ProjectsProp) {
                 )}
 
                 {/* Tooltip */}
-                <span className="absolute bottom-full mb-2 hidden w-max rounded bg-[rgba(253,216,229,0.9)] px-2 py-1 text-sm text-[var(--dark-accent)] font-medium shadow-lg group-hover:block whitespace-nowrap">
+                <span
+                  className={`absolute bottom-full mb-2 left-1/2 -translate-x-1/2 w-max rounded bg-[rgba(253,216,229,0.9)] px-2 py-1 text-sm text-[var(--dark-accent)] font-medium shadow-lg whitespace-nowrap ${showTooltip[project.id] ? 'block' : 'hidden'} md:group-hover:block`}
+                >
                   {project.type === 'individual'
                     ? 'Solo project'
                     : 'Team project'}
@@ -172,7 +185,7 @@ export default function ProjectsList({ projects }: ProjectsProp) {
                           >
                             {link.icon}
                           </a>
-                          <span className="absolute bottom-full mb-2 hidden w-max rounded bg-[rgba(253,216,229,0.9)] px-2 py-1 text-sm text-[var(--dark-accent)] font-medium shadow-lg group-hover:block whitespace-nowrap">
+                          <span className="absolute bottom-full mb-2 left-1/2 -translate-x-1/2 hidden w-max rounded bg-[rgba(253,216,229,0.9)] px-2 py-1 text-sm text-[var(--dark-accent)] font-medium shadow-lg group-hover:block whitespace-nowrap">
                             {link.label}
                           </span>
                         </li>

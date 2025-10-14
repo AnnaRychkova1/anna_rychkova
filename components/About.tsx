@@ -22,120 +22,108 @@ export default function About() {
       <div className="container flex flex-col gap-6">
         <h2 className="text-4xl md:text-6xl font-bold text-center">About Me</h2>
         <motion.div
-          className="flex flex-col  gap-3 text-center "
+          className="flex flex-col gap-3 text-center"
           variants={containerVariants}
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, amount: 0.2 }}
         >
           <motion.p variants={paragraphVariants}>
-            I am a passionate and motivated{' '}
+            I am a dedicated{' '}
             <span className="text-[var(--dark-accent)] font-bold">
-              Software Developer
+              Software Engineer
             </span>{' '}
-            with a strong drive to{' '}
-            <span className="text-[var(--dark-accent)] font-bold">learn</span>,{' '}
-            <span className="text-[var(--dark-accent)] font-bold">grow</span>,
-            and create meaningful digital experiences.{' '}
+            passionate about building scalable, maintainable, and
+            high&#8211;impact digital systems.
           </motion.p>
           <motion.p variants={paragraphVariants}>
-            My journey started with a love for{' '}
+            My journey began with a deep curiosity for{' '}
             <span className="text-[var(--dark-accent)] font-bold">
               mathematics
             </span>{' '}
-            from early childhood, which grew from solving math problems to
-            solving real-world tasks through{' '}
-            <span className="text-[var(--dark-accent)] font-bold">
-              writing code
-            </span>
-            . This passion not only inspired me to teach mathematics voluntarily
-            but also to channel that analytical mindset into building modern,
-            user-friendly applications.
+            &#8212; a mindset that naturally evolved into solving
+            real&#8211;world problems through{' '}
+            <span className="text-[var(--dark-accent)] font-bold">code</span>.
+            This passion has grown from tackling abstract problems to designing
+            and engineering complete software systems &#8212; from intuitive,
+            user-centered interfaces to reliable, data-driven back-end
+            architectures.
           </motion.p>
+
           <motion.p variants={paragraphVariants}>
-            I specialize in building modern web applications using a combination
-            of{' '}
+            I focus on{' '}
             <span className="text-[var(--dark-accent)] font-bold">
-              front-end
+              engineering clean architectures
             </span>{' '}
-            and{' '}
+            and developing software that balances performance, usability, and
+            long&#8211;term reliability. My experience spans{' '}
             <span className="text-[var(--dark-accent)] font-bold">
-              back-end
+              front&#8211;end
+            </span>
+            development, creating intuitive interfaces, and{' '}
+            <span className="text-[var(--dark-accent)] font-bold">
+              back&#8211;end
+            </span>
+            engineering, building{' '}
+            <span className="text-[var(--dark-accent)] font-bold">
+              robust, secure, and scalable data solutions
+            </span>
+            .
+          </motion.p>
+
+          <motion.p variants={paragraphVariants}>
+            I approach development as both an analytical and creative process
+            &#8212; applying{' '}
+            <span className="text-[var(--dark-accent)] font-bold">
+              data structures, algorithms, and design patterns
             </span>{' '}
-            technologies, and I enjoy leveraging{' '}
+            to craft solutions that are efficient, testable, and
+            future&#8211;proof. I believe in engineering as craftsmanship: each
+            function, API, and test contributes to a system that is elegant,
+            reliable, and built to scale.
+          </motion.p>
+
+          <motion.p variants={paragraphVariants}>
             <span className="text-[var(--dark-accent)] font-bold">
-              cloud platforms
+              Collaboration, automation, and continuous improvement
             </span>{' '}
-            to deliver scalable and reliable solutions.
+            are at the core of my work. I enjoy contributing to team success,
+            implementing CI/CD pipelines, improving code quality through
+            testing, and learning from every iteration. I value{' '}
+            <span className="text-[var(--dark-accent)] font-bold">
+              knowledge sharing
+            </span>{' '}
+            and enjoy mentoring peers, as I believe that strong teams produce
+            better software.
           </motion.p>
+
           <motion.p variants={paragraphVariants}>
-            Alongside modern frameworks, I apply solid foundations in{' '}
+            Beyond technical skills, I strive to build{' '}
             <span className="text-[var(--dark-accent)] font-bold">
-              Data Structures &amp; Algorithms
-            </span>
-            ,{' '}
-            <span className="text-[var(--dark-accent)] font-bold">
-              Object-Oriented Programming &#40;OOP&#41;
-            </span>
-            ,{' '}
-            <span className="text-[var(--dark-accent)] font-bold">
-              Secure API Design &#40;REST &amp; gRPC&#41;
-            </span>
-            ,{' '}
-            <span className="text-[var(--dark-accent)] font-bold">
-              Test-Driven Development &#40;TDD&#41;
-            </span>
-            , and{' '}
-            <span className="text-[var(--dark-accent)] font-bold">
-              Performance Optimization
-            </span>
-            .{' '}
+              software that delivers meaningful impact
+            </span>{' '}
+            &#8212; systems that not only meet functional requirements but also
+            improve workflows, empower users, and support long&#8211;term
+            business goals. Every project is an opportunity to explore
+            innovative solutions, optimize processes, and enhance user
+            experiences.
           </motion.p>
-          <motion.p variants={paragraphVariants}>
-            I thrive on challenges and take pride in writing clean, efficient
-            code, designing intuitive interfaces, and solving complex problems
-            with elegant solutions.
-          </motion.p>
-          <motion.p variants={paragraphVariants}>
-            Collaboration is at the heart of my work. I enjoy{' '}
-            <span className="text-[var(--dark-accent)] font-bold">
-              sharing knowledge
-            </span>
-            , learning from others, and contributing to team success.
-          </motion.p>
-          <motion.p variants={paragraphVariants}>
-            Beyond the technical side, I see software as both a craft and an
-            art. Just as I pay attention to details when{' '}
-            <span className="text-[var(--dark-accent)] font-bold">
-              painting
-            </span>
-            , I apply the same dedication to building software that is not only
-            functional but also beautiful and impactful.
-          </motion.p>
-          <motion.p variants={paragraphVariants}>
-            My long-term goal is to{' '}
-            <span className="text-[var(--dark-accent)] font-bold">
-              contribute to larger projects
-            </span>
-            , deliver scalable and innovative solutions, and inspire others by
-            sharing knowledge and best practices. Every project I work on is an
-            opportunity to improve, explore new technologies, and make a lasting
-            impact.
-          </motion.p>
+
           <motion.p variants={paragraphVariants}>
             With a{' '}
             <span className="text-[var(--dark-accent)] font-bold">
-              Higher Diploma Bachelor&rsquo;s degree
-            </span>{' '}
-            in Computer Science from the{' '}
+              Higher Diploma in Computing &#40;First-Class Honours&#41;
+            </span>
+            from the{' '}
             <span className="text-[var(--dark-accent)] font-bold">
               National College of Ireland
             </span>
-            , I am eager to continue developing my expertise, working on{' '}
+            , I am driven to deepen my expertise in{' '}
             <span className="text-[var(--dark-accent)] font-bold">
-              data-driven projects
-            </span>
-            , and growing in today&rsquo;s fast-evolving tech landscape.
+              distributed systems, database design, and secure software
+              engineering
+            </span>{' '}
+            &#8212; building technology that not only works but endures.
           </motion.p>
         </motion.div>
       </div>

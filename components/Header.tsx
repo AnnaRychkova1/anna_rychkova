@@ -2,6 +2,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { FiMenu } from 'react-icons/fi';
 import Image from 'next/image';
+import Link from 'next/link';
 import type { NavLinkProps } from '@/types/types';
 
 export default function Header() {
@@ -64,7 +65,7 @@ export default function Header() {
         {/* Desktop Nav */}
         <nav className="hidden lg:block text-lg 2xl:text-2xl font-medium ">
           <ul className="flex gap-2 list-none">
-            <NavLink href="/#projects" text="Projects" />
+            <NavLink href="/projects" text="Projects" />
             <NavLink href="/#skills" text="Skills" />
             <NavLink href="/#about" text="About" />
             <NavLink href="/#education" text="Education" />
@@ -94,7 +95,7 @@ export default function Header() {
         <div ref={menuRef} className="lg:hidden px-4 pb-4">
           <ul className="flex flex-col gap-1 text-lg font-medium items-end list-none">
             <NavLink
-              href="/#projects"
+              href="/projects"
               text="Projects"
               isMobile
               onClick={() => setIsMobileMenuOpen(false)}
@@ -133,13 +134,16 @@ export default function Header() {
 function NavLink({ href, text, isMobile = false, onClick }: NavLinkProps) {
   return (
     <li className="list-none w-full text-right">
-      <a
-        href={href}
-        onClick={onClick}
-        className={`px-4 py-2 rounded-full hover:text-[var(--darc-accent)] hover:drop-shadow-[0_1px_1px_#f9689d] transition ${isMobile ? 'block' : ''}`}
-      >
-        {text}
-      </a>
+      <Link href={href} passHref legacyBehavior>
+        <a
+          onClick={onClick}
+          className={`px-4 py-2 rounded-full hover:text-[var(--darc-accent)] hover:drop-shadow-[0_1px_1px_#f9689d] transition ${
+            isMobile ? 'block' : ''
+          }`}
+        >
+          {text}
+        </a>
+      </Link>
     </li>
   );
 }

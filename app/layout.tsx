@@ -31,7 +31,7 @@ const dancing = Dancing_Script({
 export const metadata = {
   title: 'Anna Rychkova',
   description:
-    'Portfolio of Anna Rychkova - software engineer, web developer and creator. Showcasing projects, skills and experience in modern technologies.',
+    'Portfolio of Anna Rychkova – software engineer and creator. Showcasing projects, skills and experience in modern technologies.',
   keywords: [
     'Anna Rychkova',
     'portfolio',
@@ -50,9 +50,9 @@ export const metadata = {
   metadataBase: new URL('https://annarychkova.dev'),
 
   openGraph: {
-    title: 'Anna Rychkova | Software Developer',
+    title: 'Anna Rychkova | Software Engineer',
     description:
-      'Discover the work and skills of Anna Rychkova – software engineer and web developer.',
+      'Discover the work and skills of Anna Rychkova – software engineer specializing in modern web technologies.',
     url: 'https://annarychkova.dev',
     siteName: 'Anna Rychkova Portfolio',
     images: [
@@ -68,9 +68,9 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Anna Rychkova | Software Developer',
+    title: 'Anna Rychkova | Software Engineer',
     description:
-      'Portfolio of Anna Rychkova – software engineer and web developer.',
+      'Portfolio of Anna Rychkova – software engineer focused on modern web development.',
     images: ['/images/logo_rectangle_tr.png'],
   },
   robots: {

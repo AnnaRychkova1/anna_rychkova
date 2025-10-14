@@ -32,7 +32,6 @@ export default function GoogleAnalytics() {
 
   return (
     <>
-      {/* офіційний тег GA */}
       <Script
         strategy="afterInteractive"
         src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}

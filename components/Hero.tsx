@@ -5,6 +5,7 @@ import Lottie from 'lottie-react';
 import animationData from '@/data/cat.json';
 import { backgroundIcons } from '@/data/techStack';
 import { useGeneratedIcons } from '@/hooks/useGeneratedIcons';
+import ContactLinks from './ContactLinks';
 
 export default function Hero() {
   const icons = useGeneratedIcons(backgroundIcons);
@@ -14,6 +15,10 @@ export default function Hero() {
       id="hero"
       className="relative overflow-hidden mx-auto h-screen shadow-md shadow-fuchsia-900/5 scroll-mt-22"
     >
+      <div className="absolute top-24 right-0 p-6 pr-10 z-20">
+        <ContactLinks />
+      </div>
+
       <div className="absolute inset-0 -z-10 opacity-5 overflow-hidden">
         {icons.map(({ icon, top, left, size }, i) => (
           <div
@@ -31,7 +36,7 @@ export default function Hero() {
         ))}
       </div>
       <div className="container z-10 flex flex-col justify-between items-center gap-6 h-[94vh] sm:h-[98vh]">
-        <div className="pt-[calc(12vh+5.5rem)] sm:pt-[calc(16vh+5.5rem)] max-w-[90rem] w-[92%] flex flex-col items-center gap-8">
+        <div className="relative pt-[calc(12vh+5.5rem)] sm:pt-[calc(16vh+5.5rem)] max-w-[90rem] w-[92%] flex flex-col items-center gap-8">
           <h1 className="text-4xl md:text-6xl font-bold text-center">
             Hi, I&rsquo;m
             <span className="text-[var(--dark-accent)]"> Anna Rychkova</span>
@@ -52,7 +57,7 @@ export default function Hero() {
             }}
           >
             <motion.p className="text-xl md:text-2xl text-center leading-relaxed">
-              {'A Result-Oriented Software Developer building and delivering software solutions that empower users, optimize business workflows, and transform ideas into real-world impact.'
+              {'A Result-Oriented Software Engineer building reliable, scalable systems that drive innovation, enhance performance, and turn complex challenges into real-world solutions.'
                 .split(' ')
                 .map((word, i) => (
                   <motion.span
@@ -90,7 +95,7 @@ export default function Hero() {
             <Lottie animationData={animationData} loop={true} />
           </motion.div>
           <motion.a
-            href="/Anna_Rychkova_Software_Developer.pdf"
+            href="/Anna_Rychkova_Graduate_Software_Engineer .pdf"
             download
             className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[var(--light-accent)] text-[var(--dark-accent)] font-semibold rounded-2xl shadow-md hover:bg-[var(--dark-accent)] hover:text-[var(--light-accent)] transition-all duration-300 w-max text-center"
             initial={{ opacity: 0, y: 30, scale: 0.9 }}
