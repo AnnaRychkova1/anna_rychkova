@@ -95,7 +95,7 @@ export default function Hero() {
             <Lottie animationData={animationData} loop={true} />
           </motion.div>
           <motion.a
-            href="/Anna_Rychkova_Graduate_Software_Engineer .pdf"
+            href="/Anna_Rychkova_Software_Engineer .pdf"
             download
             className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[var(--light-accent)] text-[var(--dark-accent)] font-semibold rounded-2xl shadow-md hover:bg-[var(--dark-accent)] hover:text-[var(--light-accent)] transition-all duration-300 w-max text-center"
             initial={{ opacity: 0, y: 30, scale: 0.9 }}
