@@ -293,7 +293,7 @@ export default function Contact() {
         {/* Modal */}
         {showModal && (
           <div
-            className="fixed inset-0 flex items-center justify-center bg-opacity-50 z-60 bg-[rgba(59,44,50,0.9)]"
+            className="fixed inset-0 flex items-center justify-center bg-opacity-50 z-60 bg-[rgba(159,150,153,0.9)]"
             onClick={e => {
               if (e.target === e.currentTarget) {
                 setShowModal(false);

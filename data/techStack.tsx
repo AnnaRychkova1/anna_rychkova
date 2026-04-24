@@ -6,11 +6,14 @@ import {
   FaDatabase,
   FaAws,
   FaPython,
+  FaLock,
+  FaNetworkWired,
 } from 'react-icons/fa';
 import {
   SiCloudinary,
   SiEslint,
   SiFirebase,
+  SiGitlab,
   SiGnubash,
   SiJest,
   SiMysql,
@@ -81,161 +84,118 @@ export const backgroundIcons = [
   { icon: <SiSendgrid className="text-[var(--dark-accent)]" /> },
 ];
 
-export const languages = [
+export const techStack = [
   {
-    icon: <IoLogoJavascript className="text-3xl text-yellow-400 lg:text-4xl" />,
-    name: 'JavaScript',
-  },
-  {
-    icon: <SiTypescript className="text-3xl text-blue-600 lg:text-4xl" />,
-    name: 'TypeScript',
-  },
-  {
-    icon: <FaJava className="text-3xl text-red-600 lg:text-4xl" />,
-    name: 'Java',
-  },
-  {
-    icon: <FaPython className="text-3xl text-blue-700 lg:text-4xl" />,
-    name: 'Python',
-  },
-  {
-    icon: <FaHtml5 className="text-3xl text-orange-500 lg:text-4xl" />,
-    name: 'HTML5',
-  },
-  {
-    icon: <FaCss3Alt className="text-3xl text-blue-500 lg:text-4xl" />,
-    name: 'CSS3',
-  },
-];
-
-export const frameworks = [
-  {
-    icon: <RiReactjsLine className="text-3xl text-cyan-400 lg:text-4xl" />,
-    name: 'React',
-  },
-  {
-    icon: <SiRedux className="text-3xl text-purple-600 lg:text-4xl" />,
-    name: 'Redux',
-  },
-  {
-    icon: <SiReactrouter className="text-3xl text-rose-600 lg:text-4xl" />,
-    name: 'React Router',
-  },
-  {
-    icon: <TbBrandNextjs className="text-3xl text-gray-900 lg:text-4xl" />,
-    name: 'Next.js',
-  },
-  {
-    icon: <FaNode className="text-3xl text-green-600 lg:text-4xl" />,
     name: 'Node.js',
+    icon: <FaNode className="text-green-600 text-3xl" />,
+    category: 'backend',
   },
   {
-    icon: <SiExpress className="text-3xl text-black lg:text-4xl" />,
     name: 'Express.js',
+    icon: <SiExpress className="text-black text-3xl" />,
+    category: 'backend',
   },
   {
-    icon: <SiTailwindcss className="text-3xl text-cyan-500 lg:text-4xl" />,
-    name: 'Tailwind CSS',
+    name: 'REST APIs',
+    icon: <SiSwagger className="text-green-500 text-3xl" />,
+    category: 'backend',
   },
   {
-    icon: <FaBootstrap className="text-3xl text-purple-600 lg:text-4xl" />,
-    name: 'Bootstrap',
+    name: 'JWT',
+    icon: <FaLock className="text-yellow-500 text-3xl" />,
+    category: 'backend',
   },
   {
-    icon: <SiJquery className="text-3xl text-blue-600 lg:text-4xl" />,
-    name: 'jQuery',
-  },
-  // {
-  //   icon: <SiStyledcomponents className="text-3xl text-pink-500 lg:text-4xl" />,
-  //   name: 'Styled Components',
-  // },
-];
-
-export const tools = [
-  {
-    icon: <FaAws className="text-3xl text-orange-500 lg:text-4xl" />,
-    name: 'AWS',
+    name: 'gRPC',
+    icon: <FaNetworkWired className="text-blue-500 text-3xl" />,
+    category: 'backend',
   },
   {
-    icon: <SiMongodb className="text-3xl text-green-600 lg:text-4xl" />,
     name: 'MongoDB',
+    icon: <SiMongodb className="text-green-600 text-3xl" />,
+    category: 'backend',
   },
   {
-    icon: <SiFirebase className="text-3xl text-orange-400 lg:text-4xl" />,
-    name: 'Firebase',
-  },
-  {
-    icon: <SiSupabase className="text-3xl text-green-600 lg:text-4xl" />,
-    name: 'Supabase',
-  },
-  {
-    icon: <SiPrisma className="text-3xl text-cyan-900 lg:text-4xl" />,
-    name: 'Prisma',
-  },
-  {
-    icon: <FaDatabase className="text-3xl text-blue-600 lg:text-4xl" />,
-    name: 'SQL',
-  },
-  {
-    icon: <SiMysql className="text-3xl text-blue-700 lg:text-4xl" />,
     name: 'MySQL',
+    icon: <SiMysql className="text-blue-700 text-3xl" />,
+    category: 'backend',
+  },
+  {
+    name: 'Supabase',
+    icon: <SiSupabase className="text-green-500 text-3xl" />,
+    category: 'backend',
   },
 
   {
-    icon: <FaDocker className="text-3xl text-blue-600 lg:text-4xl" />,
-    name: 'Docker',
+    name: 'React',
+    icon: <RiReactjsLine className="text-cyan-400 text-3xl" />,
+    category: 'frontend',
   },
   {
-    icon: <FaGithub className="text-3xl text-gray-900 lg:text-4xl" />,
-    name: 'GitHub',
+    name: 'Next.js',
+    icon: <TbBrandNextjs className="text-black text-3xl" />,
+    category: 'frontend',
   },
   {
-    icon: <BsGit className="text-3xl text-orange-700 lg:text-4xl" />,
+    name: 'Redux',
+    icon: <SiRedux className="text-purple-600 text-3xl" />,
+    category: 'frontend',
+  },
+  {
+    name: 'Tailwind CSS',
+    icon: <SiTailwindcss className="text-cyan-500 text-3xl" />,
+    category: 'frontend',
+  },
+
+  {
+    name: 'JavaScript',
+    icon: <IoLogoJavascript className="text-yellow-400 text-3xl" />,
+    category: 'language',
+  },
+  {
+    name: 'TypeScript',
+    icon: <SiTypescript className="text-blue-600 text-3xl" />,
+    category: 'language',
+  },
+  {
+    name: 'Java',
+    icon: <FaJava className="text-3xl text-red-600 lg:text-3xl" />,
+    category: 'language',
+  },
+  {
+    name: 'SQL',
+    icon: <FaDatabase className="text-blue-500 text-3xl" />,
+    category: 'language',
+  },
+
+  {
     name: 'Git',
+    icon: <BsGit className="text-orange-600 text-3xl" />,
+    category: 'tool',
   },
   {
-    icon: <SiGnubash className="text-3xl text-green-700 lg:text-4xl" />,
-    name: 'Bash',
+    name: 'GitHub',
+    icon: <FaGithub className="text-black text-3xl" />,
+    category: 'tool',
   },
   {
-    icon: <PiFigmaLogoDuotone className="text-3xl text-cyan-500 lg:text-4xl" />,
-    name: 'Figma',
+    name: 'Docker (basic)',
+    icon: <FaDocker className="text-blue-500 text-3xl" />,
+    category: 'tool',
   },
   {
-    icon: <SiPostman className="text-3xl text-orange-500 lg:text-4xl" />,
     name: 'Postman',
+    icon: <SiPostman className="text-orange-500 text-3xl" />,
+    category: 'tool',
   },
   {
-    icon: <SiSwagger className="text-3xl text-lime-400 lg:text-4xl" />,
     name: 'Swagger',
-  },
-
-  {
-    icon: <SiJest className="text-3xl text-rose-600 lg:text-4xl" />,
-    name: 'Jest',
+    icon: <SiSwagger className="text-green-500 text-3xl" />,
+    category: 'tool',
   },
   {
-    icon: <SiTestinglibrary className="text-3xl text-rose-500 lg:text-4xl" />,
-    name: 'React Testing Library',
-  },
-  {
-    icon: <SiPrettier className="text-3xl text-indigo-400 lg:text-4xl" />,
-    name: 'Prettier',
-  },
-  {
-    icon: <SiEslint className="text-3xl text-indigo-600 lg:text-4xl" />,
-    name: 'ESLint',
-  },
-  {
-    icon: <SiCloudinary className="text-3xl text-indigo-500 lg:text-4xl" />,
-    name: 'Cloudinary',
-  },
-  {
-    icon: <SiMaildotru className="text-3xl text-red-500 lg:text-4xl" />,
-    name: 'Nodemailer',
-  },
-  {
-    icon: <SiSendgrid className="text-3xl text-blue-400 lg:text-4xl" />,
-    name: 'SendGrid',
+    name: 'CI/CD (basic)',
+    icon: <SiGitlab className="text-orange-700 text-3xl" />,
+    category: 'tool',
   },
 ];

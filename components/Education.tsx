@@ -103,43 +103,77 @@ export default function Education() {
             Certificates
           </motion.h3>
           <motion.div variants={itemVariants} className="mt-2">
-            <h4 className="font-semibold">
-              <a
-                href="https://drive.google.com/file/d/1wHhhsR7Bgalv1O9XLOG5eshhjmLREgbV/view?usp=sharing"
-                target="_blank"
-                className="text-[var(--dark-accent)] underline text-xl md:text-2xl"
-              >
-                Full Stack Developer
-              </a>
-            </h4>
+            <div className="relative group inline-block">
+              <h4 className="font-semibold">
+                <a
+                  href="https://drive.google.com/file/d/1hZEiR_u_7wEafDLC4CbyTTGDkKuPW6k8/view?usp=sharing"
+                  target="_blank"
+                  className="text-[var(--dark-accent)] underline text-xl md:text-2xl"
+                >
+                  Network+
+                </a>
+              </h4>
+              <div className="absolute bottom-full left-1/2 -translate-x-1/2 hidden w-max rounded bg-[rgba(253,216,229,0.9)] px-2 py-1 text-sm text-[var(--dark-accent)] font-medium shadow-lg group-hover:block whitespace-nowrap">
+                View certificate
+              </div>
+            </div>
+            <p className="text-gray-500">
+              Certified by <span className="font-bold"> CompTIA</span>
+            </p>
+          </motion.div>
+          <motion.div variants={itemVariants} className="mt-2">
+            <div className="relative group inline-block">
+              <h4 className="font-semibold">
+                <a
+                  href="https://drive.google.com/file/d/1wHhhsR7Bgalv1O9XLOG5eshhjmLREgbV/view?usp=sharing"
+                  target="_blank"
+                  className="text-[var(--dark-accent)] underline text-xl md:text-2xl"
+                >
+                  Full Stack Developer
+                </a>
+              </h4>
+              <div className="absolute bottom-full left-1/2 -translate-x-1/2 hidden w-max rounded bg-[rgba(253,216,229,0.9)] px-2 py-1 text-sm text-[var(--dark-accent)] font-medium shadow-lg group-hover:block whitespace-nowrap">
+                View certificate
+              </div>
+            </div>
             <p className="text-gray-500">
               Certified by <span className="font-bold"> GoIT Academy</span>
             </p>
           </motion.div>
           <motion.div variants={itemVariants} className="mt-2">
-            <h4 className="font-semibold">
-              <a
-                href="https://drive.google.com/file/d/1MWi-r-4uHyQxAVv_H-N-1U1PuWAGrpvn/view?usp=sharing"
-                target="_blank"
-                className="text-[var(--dark-accent)] underline text-xl md:text-2xl"
-              >
-                IT Specialist HTML and CSS
-              </a>
-            </h4>
+            <div className="relative group inline-block">
+              <h4 className="font-semibold">
+                <a
+                  href="https://drive.google.com/file/d/1MWi-r-4uHyQxAVv_H-N-1U1PuWAGrpvn/view?usp=sharing"
+                  target="_blank"
+                  className="text-[var(--dark-accent)] underline text-xl md:text-2xl"
+                >
+                  IT Specialist HTML and CSS
+                </a>
+              </h4>
+              <div className="absolute bottom-full left-1/2 -translate-x-1/2 hidden w-max rounded bg-[rgba(253,216,229,0.9)] px-2 py-1 text-sm text-[var(--dark-accent)] font-medium shadow-lg group-hover:block whitespace-nowrap">
+                View certificate
+              </div>
+            </div>
             <p className="text-gray-500">
               Certified by <span className="font-bold"> Certiport</span>
             </p>
           </motion.div>
           <motion.div variants={itemVariants} className="mt-2">
-            <h4 className="font-semibold">
-              <a
-                href="https://drive.google.com/file/d/1Wn9KPxrFl2ir2ZLkR6j1vZVzvEA2OZox/view?usp=sharing"
-                target="_blank"
-                className="text-[var(--dark-accent)] underline text-xl md:text-2xl"
-              >
-                Introduction to Programming with Python
-              </a>
-            </h4>
+            <div className="relative group inline-block">
+              <h4 className="font-semibold">
+                <a
+                  href="https://drive.google.com/file/d/1Wn9KPxrFl2ir2ZLkR6j1vZVzvEA2OZox/view?usp=sharing"
+                  target="_blank"
+                  className="text-[var(--dark-accent)] underline text-xl md:text-2xl"
+                >
+                  Introduction to Programming with Python
+                </a>
+              </h4>
+              <div className="absolute bottom-full left-1/2 -translate-x-1/2 hidden w-max rounded bg-[rgba(253,216,229,0.9)] px-2 py-1 text-sm text-[var(--dark-accent)] font-medium shadow-lg group-hover:block whitespace-nowrap">
+                View certificate
+              </div>
+            </div>
             <p className="text-gray-500">
               Certified by <span className="font-bold"> CodeSignal</span>
             </p>

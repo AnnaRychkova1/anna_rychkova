@@ -1,11 +1,27 @@
 'use client';
-import { motion } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 import { FiDownload } from 'react-icons/fi';
 import Lottie from 'lottie-react';
 import animationData from '@/data/cat.json';
 import { backgroundIcons } from '@/data/techStack';
 import { useGeneratedIcons } from '@/hooks/useGeneratedIcons';
 import ContactLinks from './ContactLinks';
+import { heroText } from '@/data/text';
+
+const containerVariants: Variants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.12,
+    },
+  },
+};
+
+const wordVariants: Variants = {
+  hidden: { opacity: 0 },
+  visible: { opacity: 1 },
+};
 
 export default function Hero() {
   const icons = useGeneratedIcons(backgroundIcons);
@@ -36,49 +52,45 @@ export default function Hero() {
         ))}
       </div>
       <div className="container z-10 flex flex-col justify-between items-center gap-6 h-[94vh] sm:h-[98vh]">
-        <div className="relative pt-[calc(12vh+5.5rem)] sm:pt-[calc(16vh+5.5rem)] max-w-[90rem] w-[92%] flex flex-col items-center gap-8">
+        <div className="relative pt-[calc(12vh+5rem)] sm:pt-[calc(16vh+5rem)] max-w-[90rem] w-[92%] flex flex-col items-center gap-8">
           <h1 className="text-4xl md:text-6xl font-bold text-center">
             Hi, I&rsquo;m
             <span className="text-[var(--dark-accent)]"> Anna Rychkova</span>
           </h1>
+
           <motion.div
-            className="max-w-[75rem]"
+            className="max-w-[75rem] flex flex-col justify-between items-center gap-6"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
-            variants={{
-              hidden: { opacity: 0 },
-              visible: {
-                opacity: 1,
-                transition: {
-                  staggerChildren: 0.12,
-                },
-              },
-            }}
+            variants={containerVariants}
           >
-            <motion.p className="text-xl md:text-2xl text-center leading-relaxed">
-              {'A Result-Oriented Software Engineer building reliable, scalable systems that drive innovation, enhance performance, and turn complex challenges into real-world solutions.'
-                .split(' ')
-                .map((word, i) => (
-                  <motion.span
-                    key={i}
-                    className="inline-block mr-1"
-                    variants={{
-                      hidden: { opacity: 0 },
-                      visible: { opacity: 1 },
-                    }}
-                  >
-                    {word + ' '}
-                  </motion.span>
-                ))}
+            <motion.p className="text-xl md:text-2xl text-center leading-relaxed flex flex-wrap justify-center">
+              {heroText.map(({ word, highlight }, i) => (
+                <motion.span
+                  key={i}
+                  className={`mr-1 inline-block ${
+                    highlight ? 'text-[var(--dark-accent)] font-semibold' : ''
+                  }`}
+                  variants={wordVariants}
+                >
+                  {word}
+                </motion.span>
+              ))}
             </motion.p>
+
+            <div className="text-2xl md:text-3xl mt-4 flex items-center">
+              <h2 className="text-[var(--dark-accent)] font-bold tracking-wide flex items-center">
+                Build{' '}
+                <div className="w-1 h-1 bg-[var(--dark-accent)] rounded-full z-10 shadow-md shadow-fuchsia-900/5 m-2"></div>{' '}
+                Solve{' '}
+                <div className="w-1 h-1 bg-[var(--dark-accent)] rounded-full z-10 shadow-md shadow-fuchsia-900/5 m-2"></div>{' '}
+                Improve
+              </h2>
+            </div>
           </motion.div>
-          <div className="text-xl md:text-2xl mt-4">
-            <p className="text-[var(--dark-accent)] italic font-bold">
-              &#35;NeverStopLearning
-            </p>
-          </div>
         </div>
+
         <div className="flex items-end justify-between gap-6 lg:justify-between lg:gap-22 w-full">
           <motion.div
             className="lottie max-w-[264px]"
