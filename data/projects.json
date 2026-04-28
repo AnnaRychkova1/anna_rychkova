@@ -1,34 +1,31 @@
 [
   {
     "id": 1,
-    "name": "Attaboy Dog Training",
+    "name": "Smart Recruitment System",
     "images": [
-      "/images/attaboy-1.png",
-      "/images/attaboy-2.png",
-      "/images/attaboy-3.png",
-      "/images/attaboy-4.png"
+      "/images/smart-recruitment-1.png",
+      "/images/smart-recruitment-2.png",
+      "/images/smart-recruitment-3.png",
+      "/images/smart-recruitment-4.png",
+      "/images/smart-recruitment-5.png",
+      "/images/smart-recruitment-6.png",
+      "/images/smart-recruitment-7.png"
     ],
-    "type": "team",
-    "role": "team lead",
-    "overview": "The project started as a learning initiative. I led the development of the MVP and guided teammates in GitHub workflows. Later, the business owner invited me to enhance and deploy it as the official website for his dog training business. Today, the responsive site is live, serving real clients and supporting ongoing operations.",
-    "contribution": "Designed and developed the single-page public website with anchored sections for services, testimonials, and contact. Implemented the contact form with email notifications and built a separate admin dashboard to manage testimonials and client inquiries. Ensured a fully responsive, polished UI with interactive elements, configured ESLint for code quality, and deployed the project on Vercel with CI/CD.",
+    "type": "individual",
+    "role": "software developer",
+    "overview": "Smart Recruitment is a backend system for managing recruitment workflows including candidate processing, CV handling, and interview scheduling.",
+    "contribution": "Built a microservices-based backend using Node.js and Express with separate services for authentication, candidate management, filtering, and interview scheduling. Implemented gRPC communication between services and integrated OpenAI API for CV analysis. Added JWT authentication to secure API endpoints and ensure controlled access across services. Improved automation of candidate screening and reduced manual processing by introducing structured API-based recruitment workflows and AI-assisted CV evaluation.",
     "links": {
-      "github": "https://github.com/AnnaRychkova1/attaboy-dog-training",
-      "website": "https://attaboydogtraining.ie/"
+      "github": "https://github.com/AnnaRychkova1/smart-recruitment-grpc",
+      "demo": "https://res.cloudinary.com/dmzsusenh/video/upload/f_mp4/v1759780854/2025-10-06_20-52-40_xl67us.mkv"
     },
-
     "technologies": [
-      "Next.js",
-      "React",
-      "JavaScript",
-      "CSS",
-      "TailwindCSS",
-      "Firebase",
-      "Cloudinary",
-      "Nodemailer",
-      "Swiper",
-      "ESLint",
-      "Vercel"
+      "Node.js",
+      "Express",
+      "gRPC",
+      "MongoDB",
+      "JWT",
+      "OpenAI API"
     ]
   },
   {
@@ -43,31 +40,20 @@
 
     "type": "individual",
     "role": "software developer",
-    "overview": "CodeCraft is a web application for practicing and testing programming skills in JavaScript, Python, and Java. It offers coding challenges and quizzes on algorithms and data structures, from basic to advanced levels. Users can filter tasks by difficulty, language, and type. The app features a responsive design and an engaging interface. I developed both the public interface and the secure admin panel, ensuring a scalable and user-friendly experience.",
-    "contribution": "Designed and built a fully interactive platform with real-time code execution and instant feedback. Developed user registration, secure authentication, and an admin panel for managing tasks and quizzes, seeding the initial tasks into the database. Created tests to ensure functionality and stability. Ensured scalability, responsiveness, smooth user experience, code quality controls, and deployed the application to production, making it reliable for real-world use.",
+    "overview": "CodeCraft is a backend-focused coding practice platform for executing programming tasks and tracking user progress.",
+    "contribution": "Developed backend logic for task management, submissions, and progress tracking using Node.js and TypeScript. Integrated Supabase for authentication and data storage and used Piston API for code execution. Implemented role-based access control and protected admin functionality. Added feedback system with SendGrid notifications. Enabled structured coding practice with automated code execution, user progress tracking, and secure role-based access for administrators and users.",
     "links": {
       "github": "https://github.com/AnnaRychkova1/CodeCraft",
       "website": "https://code-craft-omega-eight.vercel.app/"
     },
     "technologies": [
-      "Next.js",
-      "React",
-      "JavaScript",
+      "Node.js",
       "TypeScript",
-      "SQL",
-      "CSS",
-      "TailwindCSS",
-      "Supabase",
+      "Next.js",
+      "Supabase (SQL, Auth)",
       "NextAuth.js",
-      "CodeMirror",
       "Piston API",
-      "Recharts",
-      "SendGrid",
-      "Postman",
-      "Jest",
-      "React Testing Library",
-      "ESLint",
-      "Vercel"
+      "SendGrid"
     ]
   },
   {
@@ -80,9 +66,9 @@
       "/images/aquatrack-4.png"
     ],
     "type": "team",
-    "role": "team lead",
-    "overview": "AquaTrack is a modern web application that helps users track their daily water intake and maintain a healthy lifestyle. The app features a responsive UI, an integrated guide, and allows users to log their daily water consumption, set personalized hydration goals, and monitor their progress with detailed statistics. AquaTrack serves as a personal assistant to help users stay hydrated and meet their daily targets.",
-    "contribution": "As the Team Lead, I oversaw project planning, code reviews, and GitHub repository management. As the Frontend Developer, I implemented authentication features, including email verification, password management, and Google Authentication, as well as ISO-compliant time handling. On the Backend side, I created and documented API endpoints using Swagger, ensuring clear and maintainable documentation for the team.",
+    "role": "team lead / full-stack developer",
+    "overview": "AquaTrack is a full-stack application for tracking daily water intake with user goals and progress analytics.",
+    "contribution": "Worked as team lead coordinating backend and frontend integration. Built REST APIs for user data, hydration tracking, and authentication flows. Designed API documentation using Swagger and implemented email verification, password reset, and Google OAuth authentication. Managed GitHub workflow including pull requests and code reviews. Ensured consistent data flow between frontend and backend and delivered a stable full-stack system with working authentication and real-time tracking features.",
     "links": {
       "githubFrontend": "https://github.com/AnnaRychkova1/aquatrack-front-1",
       "githubBackend": "https://github.com/AnnaRychkova1/aquatrack-back-1",
@@ -91,74 +77,43 @@
       "swagger": "https://aquatrack-back-1.onrender.com/api-docs/"
     },
     "technologies": [
-      "React",
-      "JavaScript",
-      "Redux",
-      "Recharts",
-      "HTML",
-      "CSS",
-      "i18next",
-      "Helmet",
-      "Formik",
-      "Yup",
-      "React-toastify",
-      "Rreactour",
-      "Cloudinary",
       "Node.js",
       "Express",
       "MongoDB",
-      "Mongoose",
-      "Morgan",
-      "CORS",
-      "Joi",
-      "Multer",
-      "SendGrid",
-      "Swagger",
+      "React",
+      "Redux",
       "JWT",
-      "Axios",
-      "Vite",
-      "ESLint",
-      "Vercel"
+      "Swagger"
     ]
   },
   {
     "id": 4,
-    "name": "Smart Recruitment System",
+    "name": "Attaboy Dog Training",
     "images": [
-      "/images/smart-recruitment-1.png",
-      "/images/smart-recruitment-2.png",
-      "/images/smart-recruitment-3.png",
-      "/images/smart-recruitment-4.png",
-      "/images/smart-recruitment-5.png",
-      "/images/smart-recruitment-6.png",
-      "/images/smart-recruitment-7.png"
+      "/images/attaboy-1.png",
+      "/images/attaboy-2.png",
+      "/images/attaboy-3.png",
+      "/images/attaboy-4.png"
     ],
-    "type": "individual",
-    "role": "fullstack developer",
-    "overview": "Smart Recruitment System is a distributed application for managing the full recruitment pipeline: candidate registration, AI-assisted CV analysis, filtering, interview scheduling, and user authentication. It leverages Node.js, gRPC, Express, and MongoDB with a dynamic EJS frontend.",
-    "contribution": "Designed and implemented a modular microservices architecture with gRPC and HTTP endpoints. Developed Auth Service with JWT authentication, Hiring Service for CRUD operations and AI-based CV processing, Filtering Service for candidate evaluation, and Interview Service for scheduling. Built a dynamic EJS frontend with AJAX for interactivity. Documented APIs and project structure for maintainability and scalability.",
+    "type": "team",
+    "role": "team lead / software developer",
+    "overview": "Attaboy Dog Training is a web platform for managing client communication and business operations for a real dog training service.",
+    "contribution": "Built admin system for managing testimonials and client inquiries. Implemented authentication-based workflows, contact forms with email notifications, and admin dashboard for content management. Deployed application and set up CI/CD pipeline using Vercel.Provided a working business platform that supports client communication and simplifies content and inquiry management for daily operations.",
     "links": {
-      "github": "https://github.com/AnnaRychkova1/smart-recruitment-grpc",
-      "demo": "https://res.cloudinary.com/dmzsusenh/video/upload/f_mp4/v1759780854/2025-10-06_20-52-40_xl67us.mkv"
+      "github": "https://github.com/AnnaRychkova1/attaboy-dog-training",
+      "website": "https://attaboydogtraining.ie/"
     },
+
     "technologies": [
-      "openai",
-      "Node.js",
-      "Express",
-      "gRPC",
-      "MongoDB",
-      "Mongoose",
-      "EJS",
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "bcrypt",
-      "JWT",
-      "Multer",
-      "pdf-parse",
-      "Concurrently"
+      "Next.js",
+      "React",
+      "Firebase",
+      "TailwindCSS",
+      "Nodemailer",
+      "Vercel"
     ]
   },
+
   {
     "id": 5,
     "name": "GardenShop",
@@ -170,8 +125,8 @@
     ],
     "type": "individual",
     "role": "frontend developer",
-    "overview": "GardenShop is a responsive web application for showcasing and selling garden plants. It provides a complete browsing and shopping experience, including plant catalog, product details, real-time cart management, and a contact page with validation and map integration.",
-    "contribution": "Designed and developed the entire front-end using HTML, CSS, and JavaScript. Implemented plant cards sourced from JSON, search and filter functionality, Bootstrap-based image carousel, modal view for enlarged images, and discount labeling. Built real-time cart updates using Local Storage and a validated contact form. Ensured a fully responsive layout and smooth user experience across devices.",
+    "overview": "GardenShop is a responsive e-commerce web application for browsing and showcasing garden plants, with product catalog, cart functionality, and contact features.",
+    "contribution": "Built a full frontend application using HTML, CSS, and JavaScript. Implemented dynamic product catalog using JSON data, including search and filter functionality. Developed interactive UI components such as product cards, image carousel, and modal views for product details. Added shopping cart functionality using Local Storage with real-time updates. Built a validated contact form and ensured responsive design across devices.",
     "links": {
       "github": "https://github.com/AnnaRychkova1/GardenShop",
       "website": "https://annarychkova1.github.io/GardenShop/"

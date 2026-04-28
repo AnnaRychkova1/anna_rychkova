@@ -195,11 +195,11 @@ export default function ProjectsList({ projects }: ProjectsProp) {
               </div>
             </div>
 
-            <ul className="flex flex-wrap gap-3">
+            <ul className="flex flex-wrap gap-2 text-sm">
               {project.technologies.map((tech, index) => (
                 <li
                   key={index}
-                  className="bg-[rgba(253,216,229,0.9)] rounded-md px-2 py-1 shadow-md shadow-fuchsia-900/5"
+                  className="bg-[rgba(253,216,229,0.9)] rounded-md p-1 shadow-md shadow-fuchsia-900/5"
                 >
                   {tech}
                 </li>
