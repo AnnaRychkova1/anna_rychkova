@@ -31,68 +31,6 @@ export default function Projects() {
               <ul className="flex flex-col gap-1">
                 <li>
                   <a
-                    href="https://annarychkova1.github.io/EnergyFlowWeb/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-[var(--dark-accent)] hover:underline"
-                  >
-                    Energy Flow
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://mistohub.org/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-[var(--dark-accent)] hover:underline"
-                  >
-                    Misto Hub
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    href="https://camperrent.netlify.app/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-[var(--dark-accent)] hover:underline"
-                  >
-                    Camper Rent
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://kaguasbest.github.io/DreamYachts/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-[var(--dark-accent)] hover:underline"
-                  >
-                    DreamYachts
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://blended-currency.vercel.app/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-[var(--dark-accent)] hover:underline"
-                  >
-                    Currency
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://blended-country.vercel.app/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-[var(--dark-accent)] hover:underline"
-                  >
-                    Countries
-                  </a>
-                </li>
-
-                <li>
-                  <a
                     href="https://movies-redux-coral.vercel.app/"
                     target="_blank"
                     rel="noopener noreferrer"

@@ -14,7 +14,7 @@
     "type": "individual",
     "role": "software developer",
     "overview": "Smart Recruitment is a backend system for managing recruitment workflows including candidate processing, CV handling, and interview scheduling.",
-    "contribution": "Built a microservices-based backend using Node.js and Express with separate services for authentication, candidate management, filtering, and interview scheduling. Implemented gRPC communication between services and integrated OpenAI API for CV analysis. Added JWT authentication to secure API endpoints and ensure controlled access across services. Improved automation of candidate screening and reduced manual processing by introducing structured API-based recruitment workflows and AI-assisted CV evaluation.",
+    "contribution": "Designed and implemented a microservices-based backend system for recruitment workflows, including authentication, candidate management, and interview scheduling. Built service-to-service communication using gRPC and integrated OpenAI API for AI-assisted CV analysis. Implemented JWT-based authentication and structured API workflows, replacing manual CV screening with automated, data-driven processing.",
     "links": {
       "github": "https://github.com/AnnaRychkova1/smart-recruitment-grpc",
       "demo": "https://res.cloudinary.com/dmzsusenh/video/upload/f_mp4/v1759780854/2025-10-06_20-52-40_xl67us.mkv"
@@ -113,9 +113,84 @@
       "Vercel"
     ]
   },
-
   {
     "id": 5,
+    "name": "Camper Rent",
+    "images": [
+      "/images/camper-rent-1.png",
+      "/images/camper-rent-2.png",
+      "/images/camper-rent-3.png",
+      "/images/camper-rent-4.png",
+      "/images/camper-rent-5.png"
+    ],
+    "type": "individual",
+    "role": "frontend engineer",
+    "overview": "Camper Rent is a responsive web application for browsing and renting campers, featuring API-driven search, filtering, and booking workflows.",
+    "contribution": "Built a React-based front-end application with focus on structured data flow and scalable state management. Implemented global state handling using Redux Toolkit and Redux Persist to manage filters, pagination, and user preferences. Integrated external APIs using Axios, designing efficient data fetching and update flows for search and filtering functionality. Implemented validated user input handling using Formik and Yup to support booking workflows. Ensured consistent client-side behaviour, error handling, and responsive design, resulting in a maintainable application with reliable data interaction and smooth user experience.",
+    "links": {
+      "github": "https://github.com/AnnaRychkova1/camper-rent",
+      "website": "https://camperrent.netlify.app/"
+    },
+    "technologies": [
+      "React",
+      "Redux Toolkit",
+      "Redux Persist",
+      "JavaScript",
+      "Axios",
+      "Formik",
+      "Yup",
+      "CSS",
+      "REST API"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Misto Hub",
+    "images": [
+      "/images/misto-hub-1.png",
+      "/images/misto-hub-2.png",
+      "/images/misto-hub-3.png",
+      "/images/misto-hub-4.png"
+    ],
+    "type": "team",
+    "role": "software developer",
+    "overview": "Misto Hub is a public platform aimed at promoting urban development in Poltava by providing accessible information and attracting potential investors through a responsive and interactive web experience.",
+    "contribution": "Contributed to the development of a full-stack application using React and Node.js, focusing on interactive features and system integration. Implemented Telegram bot integration to enhance user communication and platform engagement. Developed reusable UI functionality with validation logic and implemented client-side form persistence using sessionStorage. Ensured responsive and accessible interface behaviour across devices. Collaborated within a cross-functional team including developers, QA engineers, designers, and project management, ensuring alignment with requirements and smooth front-end and back-end integration, resulting in a reliable and user-centric application.",
+    "links": {
+      "github": "https://github.com/IvettaDashkova/MistoHub",
+      "website": "http://mistohub.org/"
+    },
+    "technologies": [
+      "React",
+      "Node.js",
+      "JavaScript",
+      "CSS",
+      "REST API",
+      "Telegram Bot API"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Energy Flow",
+    "images": [
+      "/images/energy-flow-1.png",
+      "/images/energy-flow-2.png",
+      "/images/energy-flow-3.png",
+      "/images/energy-flow-4.png",
+      "/images/energy-flow-5.png"
+    ],
+    "type": "team",
+    "role": "team lead / frontend developer",
+    "overview": "Energy Flow is a responsive web application that delivers structured exercise data through API-driven interactions, supporting a smooth and interactive user experience.",
+    "contribution": "Led front-end development and defined the overall application structure and styling system. Organized a modular and consistent UI approach to support scalability and maintainability across the application. Developed client-side logic for API integration using Axios, including data fetching, search, and pagination, and introduced shared utilities for handling UI behaviour and error management. Coordinated team development through GitHub workflows and code reviews, resulting in a maintainable front-end structure with reliable API interaction and improved user experience.",
+    "links": {
+      "github": "https://github.com/AnnaRychkova1/EnergyFlowWeb",
+      "website": "https://annarychkova1.github.io/EnergyFlowWeb/"
+    },
+    "technologies": ["JavaScript", "HTML", "CSS", "Axios", "REST API"]
+  },
+  {
+    "id": 8,
     "name": "GardenShop",
     "images": [
       "/images/garden-shop-1.png",
@@ -124,7 +199,7 @@
       "/images/garden-shop-4.png"
     ],
     "type": "individual",
-    "role": "frontend developer",
+    "role": "web developer",
     "overview": "GardenShop is a responsive e-commerce web application for browsing and showcasing garden plants, with product catalog, cart functionality, and contact features.",
     "contribution": "Built a full frontend application using HTML, CSS, and JavaScript. Implemented dynamic product catalog using JSON data, including search and filter functionality. Developed interactive UI components such as product cards, image carousel, and modal views for product details. Added shopping cart functionality using Local Storage with real-time updates. Built a validated contact form and ensured responsive design across devices.",
     "links": {
@@ -140,5 +215,62 @@
       "JSON",
       "GitHub Pages"
     ]
+  },
+  {
+    "id": 9,
+    "name": "Dream Yachts",
+    "images": [
+      "/images/dream-yachts-1.png",
+      "/images/dream-yachts-2.png",
+      "/images/dream-yachts-3.png",
+      "/images/dream-yachts-4.png"
+    ],
+    "type": "team",
+    "role": "frontend developer",
+    "overview": "Dream Yachts is a responsive portfolio website for a luxury yacht company, designed to showcase services and improve user engagement through a structured and visually appealing interface.",
+    "contribution": "Contributed to the development of a responsive front-end interface using HTML and CSS, focusing on layout structure and visual consistency. Implemented adaptive design to ensure proper rendering across desktop, tablet, and mobile devices. Developed interactive UI elements such as navigation, anchor-based scrolling, and call-to-action components to improve usability. Collaborated with the team to maintain design consistency and align with project requirements, contributing to a cohesive and responsive front-end experience.",
+    "links": {
+      "github": "https://github.com/KaguasBest/DreamYachts",
+      "website": "https://kaguasbest.github.io/DreamYachts/"
+    },
+    "technologies": ["HTML", "CSS", "JavaScript"]
+  },
+  {
+    "id": 10,
+    "name": "Currency",
+    "images": [
+      "/images/currency-1.png",
+      "/images/currency-2.png",
+      "/images/currency-3.png"
+    ],
+    "type": "team",
+    "role": "frontend developer",
+    "overview": "Currency is a React-based application for currency conversion and data visualization with external API integration, developed as a team-based learning project and deployed to production.",
+
+    "contribution": "Contributed to the development of a React-based currency conversion application. Implemented client-side logic for external API integration, including geolocation-based user data retrieval using latitude and longitude coordinates. Worked on processing API responses and supporting dynamic UI updates for improved user interaction. Ensured responsive design and clean component structure to improve usability and maintainability. Configured project setup using Vite and handled deployment to Vercel with required adjustments for production readiness. Improved user experience by ensuring real-time data updates and stable application behaviour across devices.",
+    "links": {
+      "github": "https://github.com/AnnaRychkova1/blended-currency",
+      "website": "https://blended-currency.vercel.app/"
+    },
+    "technologies": ["React", "Redux", "JavaScript", "CSS", "HTML", "REST API"]
+  },
+  {
+    "id": 11,
+    "name": "Country",
+    "images": [
+      "/images/country-1.png",
+      "/images/country-2.png",
+      "/images/country-3.png"
+    ],
+    "type": "team",
+    "role": "frontend developer",
+    "overview": "Country is a React-based application for exploring country data by region, developed as a team-based learning project with structured API integration and deployed to production.",
+
+    "contribution": "Contributed to the development of a React application for exploring country data by region and name. Implemented service-based API functions for handling REST API requests and organizing data fetching logic. Worked with helper functions to transform API responses into consistent formats before rendering. Applied separation of concerns to improve code structure and maintainability. Contributed to modular client-side architecture to ensure efficient data flow and reusable API services. Participated in deployment preparation and ensured responsive UI behaviour across devices, improving overall usability and stability of the application.",
+    "links": {
+      "github": "https://github.com/AnnaRychkova1/blended-country",
+      "website": "https://blended-country.vercel.app/"
+    },
+    "technologies": ["React", "JavaScript", "REST API", "Axios", "CSS", "HTML"]
   }
 ]
