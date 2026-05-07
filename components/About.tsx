@@ -25,12 +25,12 @@ export default function About() {
         >
           <motion.div
             variants={itemVariants}
-            className="flex flex-col items-center"
+            className="flex flex-col items-center text-center"
           >
             <h4 className="text-[var(--dark-accent)] text-xl md:text-2xl font-semibold">
               Backend Development
             </h4>
-            <p className=" text-center max-w-[900px]">
+            <p className="max-w-[900px]">
               Design and build backend services, REST APIs, and data-driven
               applications using Node.js and TypeScript, focusing on
               reliability, clean structure, and maintainability.
@@ -39,12 +39,12 @@ export default function About() {
 
           <motion.div
             variants={itemVariants}
-            className="flex flex-col items-center"
+            className="flex flex-col items-center text-center"
           >
             <h4 className="text-[var(--dark-accent)] text-xl md:text-2xl font-semibold">
               API & System Design
             </h4>
-            <p className=" text-center max-w-[900px]">
+            <p className="max-w-[900px]">
               Design APIs and implement authentication systems (JWT, RBAC) in
               project-based environments
             </p>
@@ -52,12 +52,12 @@ export default function About() {
 
           <motion.div
             variants={itemVariants}
-            className="flex flex-col items-center"
+            className="flex flex-col items-center text-center"
           >
             <h4 className="text-[var(--dark-accent)] text-xl md:text-2xl font-semibold">
               Networking & Application Behaviour
             </h4>
-            <p className=" text-center max-w-[900px]">
+            <p className="max-w-[900px]">
               Applied understanding of how applications communicate over HTTP,
               DNS, and TCP/IP in backend development and API debugging.
             </p>
@@ -65,12 +65,12 @@ export default function About() {
 
           <motion.div
             variants={itemVariants}
-            className="flex flex-col items-center"
+            className="flex flex-col items-center text-center"
           >
             <h4 className="text-[var(--dark-accent)] text-xl md:text-2xl font-semibold">
               Full-Stack Development
             </h4>
-            <p className=" text-center max-w-[900px]">
+            <p className="max-w-[900px]">
               Develop full-stack applications using React and Next.js,
               connecting frontend interfaces with backend services.
             </p>
@@ -78,12 +78,12 @@ export default function About() {
 
           <motion.div
             variants={itemVariants}
-            className="flex flex-col items-center"
+            className="flex flex-col items-center text-center"
           >
             <h4 className="text-[var(--dark-accent)] text-xl md:text-2xl font-semibold">
               Collaboration & Engineering Practices
             </h4>
-            <p className=" text-center max-w-[900px]">
+            <p className="max-w-[900px]">
               Work in team environments using GitHub workflows, including pull
               requests, code reviews, and resolving merge conflicts. Acted as
               team lead in a training project, coordinating delivery and

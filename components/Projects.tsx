@@ -5,7 +5,7 @@ import ProjectsList from './ProjectsList';
 import projects from '../data/projects.json';
 
 export default function Projects() {
-  const featuredProjects = projects.slice(0, 3);
+  const featuredProjects = projects.slice(0, 4);
   return (
     <section id="projects" className="scroll-mt-15">
       <div className="container flex flex-col gap-6">

@@ -1,6 +1,5 @@
 'use client';
 import React from 'react';
-import { motion } from 'framer-motion';
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import ProjectsList from '@/components/ProjectsList';
@@ -17,70 +16,6 @@ export default function Projects() {
               My Projects
             </h2>
             <ProjectsList projects={projects} />
-            <motion.div
-              className="text-center text-lg text-gray-600 flex flex-col gap-2"
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.2, duration: 0.6 }}
-            >
-              <p>
-                In the near future I will add more projects to my portfolio,
-                such as:
-              </p>
-              <ul className="flex flex-col gap-1">
-                <li>
-                  <a
-                    href="https://movies-redux-coral.vercel.app/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-[var(--dark-accent)] hover:underline"
-                  >
-                    Movies
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://phonebook-auth.vercel.app/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-[var(--dark-accent)] hover:underline"
-                  >
-                    PhoneBook
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://annarychkova1.github.io/web-studio/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-[var(--dark-accent)] hover:underline"
-                  >
-                    WebStudio
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://annarychkova1.github.io/Simply-Shockolate/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-[var(--dark-accent)] hover:underline"
-                  >
-                    Simply Shockolate
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://annarychkova1.github.io/Food-Delivery/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-[var(--dark-accent)] hover:underline"
-                  >
-                    Food Delivery
-                  </a>
-                </li>
-              </ul>
-            </motion.div>
           </div>
         </section>
       </main>

@@ -191,6 +191,38 @@
   },
   {
     "id": 8,
+    "name": "Phonebook",
+    "images": [
+      "/images/phonebook-1.png",
+      "/images/phonebook-2.png",
+      "/images/phonebook-3.png",
+      "/images/phonebook-4.png",
+      "/images/phonebook-5.png"
+    ],
+    "type": "individual",
+    "role": "full-stack developer",
+    "overview": "Phonebook is a full-stack contact management application with authentication-protected user accounts and user-specific contact data handling.",
+    "contribution": "Developed a full-stack application for managing personal contact lists with secure authentication workflows and protected user access. Built REST APIs using Node.js and MongoDB for user registration, login, and contact management, ensuring each user could securely access and manage their own data. Implemented frontend authentication flows, protected routing, and centralized state management using React and Redux Toolkit. Structured API service layers and organized backend architecture using controllers, services, middlewares, and schema validation, resulting in a maintainable client-server application with secure user-specific data handling.",
+    "links": {
+      "githubFrontend": "https://github.com/AnnaRychkova1/phonebook-auth",
+      "githubBackend": "https://github.com/AnnaRychkova1/phonebook-auth-api",
+      "website": "https://phonebook-auth.vercel.app/"
+    },
+    "technologies": [
+      "React",
+      "Redux Toolkit",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Mongoose",
+      "JWT",
+      "Axios",
+      "REST API",
+      "JavaScript"
+    ]
+  },
+  {
+    "id": 9,
     "name": "GardenShop",
     "images": [
       "/images/garden-shop-1.png",
@@ -217,7 +249,7 @@
     ]
   },
   {
-    "id": 9,
+    "id": 10,
     "name": "Dream Yachts",
     "images": [
       "/images/dream-yachts-1.png",
@@ -236,12 +268,13 @@
     "technologies": ["HTML", "CSS", "JavaScript"]
   },
   {
-    "id": 10,
+    "id": 11,
     "name": "Currency",
     "images": [
       "/images/currency-1.png",
       "/images/currency-2.png",
-      "/images/currency-3.png"
+      "/images/currency-3.png",
+      "/images/currency-4.png"
     ],
     "type": "team",
     "role": "frontend developer",
@@ -255,7 +288,7 @@
     "technologies": ["React", "Redux", "JavaScript", "CSS", "HTML", "REST API"]
   },
   {
-    "id": 11,
+    "id": 12,
     "name": "Country",
     "images": [
       "/images/country-1.png",
@@ -272,5 +305,102 @@
       "website": "https://blended-country.vercel.app/"
     },
     "technologies": ["React", "JavaScript", "REST API", "Axios", "CSS", "HTML"]
+  },
+  {
+    "id": 13,
+    "name": "Movie App",
+    "images": [
+      "/images/movie-1.png",
+      "/images/movie-2.png",
+      "/images/movie-3.png",
+      "/images/movie-4.png",
+      "/images/movie-5.png"
+    ],
+    "type": "personal",
+    "role": "frontend developer",
+    "overview": "Movie App is a frontend application for browsing trending movies, searching titles, and viewing detailed movie information using external movie APIs.",
+    "contribution": "Developed a frontend movie application for browsing trending movies, searching titles, and viewing detailed movie information. Implemented Redux state management, dynamic routing, and integrated external movie APIs for handling movie data and search functionality. Structured reusable UI components and configured deployment using Vite and Vercel. Delivered a responsive single-page application with centralized state management and smooth client-side user experience.",
+    "links": {
+      "github": "https://github.com/AnnaRychkova1/movies-redux",
+      "website": "https://movies-redux-coral.vercel.app/"
+    },
+    "technologies": [
+      "React",
+      "Redux",
+      "JavaScript",
+      "Vite",
+      "REST API",
+      "React Router",
+      "CSS",
+      "Vercel"
+    ]
+  },
+  {
+    "id": 14,
+    "name": "WebStudio",
+    "images": [
+      "/images/webstudio-1.png",
+      "/images/webstudio-2.png",
+      "/images/webstudio-3.png",
+      "/images/webstudio-4.png",
+      "/images/webstudio-5.png"
+    ],
+    "type": "individual",
+    "role": "frontend developer",
+    "overview": "WebStudio is a responsive multi-page business website focused on presenting company services, team information, and customer interaction through a structured user interface.",
+    "contribution": "Developed a responsive multi-page frontend application using HTML, CSS, and JavaScript. Implemented adaptive layouts, mobile navigation, modal interaction logic, and structured UI sections for services, team presentation, and customer engagement. Built reusable styling structure and responsive image handling to ensure consistent rendering across desktop, tablet, and mobile devices. Improved user interaction and accessibility through responsive navigation, interactive forms, and client-side UI behaviour.",
+    "links": {
+      "github": "https://github.com/AnnaRychkova1/web-studio"
+    },
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Responsive Design",
+      "Flexbox",
+      "CSS"
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Simply Chocolate",
+    "images": [
+      "/images/simply-chocolate-1.png",
+      "/images/simply-chocolate-2.png",
+      "/images/simply-chocolate-3.png"
+    ],
+    "type": "individual",
+    "role": "frontend developer",
+    "overview": "Simply Chocolate is a responsive product landing page designed to showcase chocolate products through structured layouts, interactive sections, and adaptive user interface behaviour.",
+    "contribution": "Developed a responsive multi-section landing page using HTML, CSS, and JavaScript. Implemented adaptive layouts, interactive UI elements, modal interactions, and structured content sections focused on product presentation and user engagement. Applied responsive design techniques and reusable styling structure to ensure consistent rendering across desktop, tablet, and mobile devices. Improved user experience through smooth navigation, visual consistency, and responsive client-side interface behaviour.",
+    "links": {
+      "github": "https://github.com/AnnaRychkova1/Simply-Shockolate",
+      "website": "https://annarychkova1.github.io/Simply-Shockolate/"
+    },
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Responsive Design",
+      "Flexbox"
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Food Delivery",
+    "images": [
+      "/images/food-delivery-1.png",
+      "/images/food-delivery-2.png",
+      "/images/food-delivery-3.png"
+    ],
+    "type": "individual",
+    "role": "frontend developer",
+    "overview": "Food Delivery is a responsive landing page for a food delivery service, designed to present menu information, service features, and customer-focused content through a structured user interface.",
+    "contribution": "Developed a responsive frontend landing page using HTML and CSS with focus on layout structure, visual consistency, and adaptive design. Implemented responsive sections for service presentation, navigation, and promotional content to ensure proper rendering across desktop, tablet, and mobile devices. Structured reusable styling components and applied modern CSS techniques for flexible page layouts and maintainable styling. Improved usability and visual presentation through responsive interface behaviour and organized content structure.",
+    "links": {
+      "github": "https://github.com/AnnaRychkova1/Food-Delivery",
+      "website": "https://annarychkova1.github.io/Food-Delivery/"
+    },
+    "technologies": ["HTML", "CSS", "Responsive Design", "Flexbox", "CSS"]
   }
 ]
