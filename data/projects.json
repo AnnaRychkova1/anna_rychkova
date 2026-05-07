@@ -76,15 +76,7 @@
       "demo": "https://res.cloudinary.com/dmzsusenh/video/upload/f_mp4/v1759782287/2025-10-06_21-21-15_sy4hzr.mkv",
       "swagger": "https://aquatrack-back-1.onrender.com/api-docs/"
     },
-    "technologies": [
-      "Node.js",
-      "Express",
-      "MongoDB",
-      "React",
-      "Redux",
-      "JWT",
-      "Swagger"
-    ]
+    "technologies": ["Node.js", "Express", "MongoDB", "React", "JWT", "Swagger"]
   },
   {
     "id": 4,
@@ -131,17 +123,7 @@
       "github": "https://github.com/AnnaRychkova1/camper-rent",
       "website": "https://camperrent.netlify.app/"
     },
-    "technologies": [
-      "React",
-      "Redux Toolkit",
-      "Redux Persist",
-      "JavaScript",
-      "Axios",
-      "Formik",
-      "Yup",
-      "CSS",
-      "REST API"
-    ]
+    "technologies": ["React", "JavaScript", "CSS", "REST API"]
   },
   {
     "id": 6,
@@ -187,7 +169,7 @@
       "github": "https://github.com/AnnaRychkova1/EnergyFlowWeb",
       "website": "https://annarychkova1.github.io/EnergyFlowWeb/"
     },
-    "technologies": ["JavaScript", "HTML", "CSS", "Axios", "REST API"]
+    "technologies": ["JavaScript", "HTML", "CSS", "REST API"]
   },
   {
     "id": 8,
@@ -210,13 +192,10 @@
     },
     "technologies": [
       "React",
-      "Redux Toolkit",
       "Node.js",
       "Express",
       "MongoDB",
-      "Mongoose",
       "JWT",
-      "Axios",
       "REST API",
       "JavaScript"
     ]
@@ -238,15 +217,7 @@
       "github": "https://github.com/AnnaRychkova1/GardenShop",
       "website": "https://annarychkova1.github.io/GardenShop/"
     },
-    "technologies": [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "Bootstrap",
-      "LocalStorage",
-      "JSON",
-      "GitHub Pages"
-    ]
+    "technologies": ["HTML", "CSS", "JavaScript", "Bootstrap"]
   },
   {
     "id": 10,
@@ -304,7 +275,7 @@
       "github": "https://github.com/AnnaRychkova1/blended-country",
       "website": "https://blended-country.vercel.app/"
     },
-    "technologies": ["React", "JavaScript", "REST API", "Axios", "CSS", "HTML"]
+    "technologies": ["React", "JavaScript", "REST API", "CSS", "HTML"]
   },
   {
     "id": 13,
@@ -352,14 +323,7 @@
     "links": {
       "github": "https://github.com/AnnaRychkova1/web-studio"
     },
-    "technologies": [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "Responsive Design",
-      "Flexbox",
-      "CSS"
-    ]
+    "technologies": ["HTML", "CSS", "JavaScript", "Responsive Design"]
   },
   {
     "id": 15,
@@ -377,13 +341,7 @@
       "github": "https://github.com/AnnaRychkova1/Simply-Shockolate",
       "website": "https://annarychkova1.github.io/Simply-Shockolate/"
     },
-    "technologies": [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "Responsive Design",
-      "Flexbox"
-    ]
+    "technologies": ["HTML", "CSS", "JavaScript", "Responsive Design"]
   },
   {
     "id": 16,
@@ -401,6 +359,6 @@
       "github": "https://github.com/AnnaRychkova1/Food-Delivery",
       "website": "https://annarychkova1.github.io/Food-Delivery/"
     },
-    "technologies": ["HTML", "CSS", "Responsive Design", "Flexbox", "CSS"]
+    "technologies": ["HTML", "CSS", "Responsive Design"]
   }
 ]
