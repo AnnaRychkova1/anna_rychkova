@@ -127,32 +127,6 @@
   },
   {
     "id": 6,
-    "name": "Misto Hub",
-    "images": [
-      "/images/misto-hub-1.png",
-      "/images/misto-hub-2.png",
-      "/images/misto-hub-3.png",
-      "/images/misto-hub-4.png"
-    ],
-    "type": "team",
-    "role": "software developer",
-    "overview": "Misto Hub is a public platform aimed at promoting urban development in Poltava by providing accessible information and attracting potential investors through a responsive and interactive web experience.",
-    "contribution": "Contributed to the development of a full-stack application using React and Node.js, focusing on interactive features and system integration. Implemented Telegram bot integration to enhance user communication and platform engagement. Developed reusable UI functionality with validation logic and implemented client-side form persistence using sessionStorage. Ensured responsive and accessible interface behaviour across devices. Collaborated within a cross-functional team including developers, QA engineers, designers, and project management, ensuring alignment with requirements and smooth front-end and back-end integration, resulting in a reliable and user-centric application.",
-    "links": {
-      "github": "https://github.com/IvettaDashkova/MistoHub",
-      "website": "http://mistohub.org/"
-    },
-    "technologies": [
-      "React",
-      "Node.js",
-      "JavaScript",
-      "CSS",
-      "REST API",
-      "Telegram Bot API"
-    ]
-  },
-  {
-    "id": 7,
     "name": "Energy Flow",
     "images": [
       "/images/energy-flow-1.png",
@@ -172,7 +146,7 @@
     "technologies": ["JavaScript", "HTML", "CSS", "REST API"]
   },
   {
-    "id": 8,
+    "id": 7,
     "name": "Phonebook",
     "images": [
       "/images/phonebook-1.png",
@@ -201,7 +175,7 @@
     ]
   },
   {
-    "id": 9,
+    "id": 8,
     "name": "GardenShop",
     "images": [
       "/images/garden-shop-1.png",
@@ -218,6 +192,32 @@
       "website": "https://annarychkova1.github.io/GardenShop/"
     },
     "technologies": ["HTML", "CSS", "JavaScript", "Bootstrap"]
+  },
+  {
+    "id": 9,
+    "name": "Misto Hub",
+    "images": [
+      "/images/misto-hub-1.png",
+      "/images/misto-hub-2.png",
+      "/images/misto-hub-3.png",
+      "/images/misto-hub-4.png"
+    ],
+    "type": "team",
+    "role": "software developer",
+    "overview": "Misto Hub is a public platform aimed at promoting urban development in Poltava by providing accessible information and attracting potential investors through a responsive and interactive web experience.",
+    "contribution": "Contributed to the development of a full-stack application using React and Node.js, focusing on interactive features and system integration. Implemented Telegram bot integration to enhance user communication and platform engagement. Developed reusable UI functionality with validation logic and implemented client-side form persistence using sessionStorage. Ensured responsive and accessible interface behaviour across devices. Collaborated within a cross-functional team including developers, QA engineers, designers, and project management, ensuring alignment with requirements and smooth front-end and back-end integration, resulting in a reliable and user-centric application.",
+    "links": {
+      "github": "https://github.com/IvettaDashkova/MistoHub",
+      "website": "http://mistohub.org/"
+    },
+    "technologies": [
+      "React",
+      "Node.js",
+      "JavaScript",
+      "CSS",
+      "REST API",
+      "Telegram Bot API"
+    ]
   },
   {
     "id": 10,

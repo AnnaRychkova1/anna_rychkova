@@ -5,6 +5,8 @@ import Header from '@/components/Header';
 import ProjectsList from '@/components/ProjectsList';
 import projects from '../../data/projects.json';
 
+const moreProjects = projects.slice(4);
+
 export default function Projects() {
   return (
     <>
@@ -15,7 +17,7 @@ export default function Projects() {
             <h2 className="text-4xl md:text-6xl font-bold text-center">
               My Projects
             </h2>
-            <ProjectsList projects={projects} />
+            <ProjectsList projects={moreProjects} />
           </div>
         </section>
       </main>

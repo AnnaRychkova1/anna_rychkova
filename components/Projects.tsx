@@ -28,7 +28,7 @@ export default function Projects() {
             }}
           >
             <FaRegFolderOpen size={22} />
-            View all projects
+            More projects
           </motion.a>
         </div>
       </div>
