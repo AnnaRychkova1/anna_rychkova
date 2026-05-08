@@ -13,8 +13,8 @@
     ],
     "type": "individual",
     "role": "software developer",
-    "overview": "Smart Recruitment is a backend system for managing recruitment workflows including candidate processing, CV handling, and interview scheduling.",
-    "contribution": "Designed and implemented a microservices-based backend system for recruitment workflows, including authentication, candidate management, and interview scheduling. Built service-to-service communication using gRPC and integrated OpenAI API for AI-assisted CV analysis. Implemented JWT-based authentication and structured API workflows, replacing manual CV screening with automated, data-driven processing.",
+    "overview": "Smart Recruitment is a backend system for managing recruitment workflows, including candidate processing, CV handling, and interview scheduling.",
+    "contribution": "Designed and implemented a distributed-style backend system (microservices-based) for recruitment workflows, including authentication, candidate management, and interview scheduling. Built service-to-service communication using gRPC and integrated OpenAI API for AI-assisted CV analysis. Implemented JWT-based authentication and structured API workflows, automating candidate processing and reducing manual CV screening.",
     "links": {
       "github": "https://github.com/AnnaRychkova1/smart-recruitment-grpc",
       "demo": "https://res.cloudinary.com/dmzsusenh/video/upload/f_mp4/v1759780854/2025-10-06_20-52-40_xl67us.mkv"
