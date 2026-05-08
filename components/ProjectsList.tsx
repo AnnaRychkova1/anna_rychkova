@@ -1,19 +1,13 @@
 'use client';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination } from 'swiper/modules';
+import { useEffect, useState } from 'react';
+import { motion, Variants } from 'framer-motion';
 import { FaGithub } from 'react-icons/fa';
 import { FaPerson } from 'react-icons/fa6';
 import { FaPeopleGroup } from 'react-icons/fa6';
 import { AiOutlineGlobal, AiOutlinePlayCircle } from 'react-icons/ai';
-import { motion, Variants } from 'framer-motion';
-import Image from 'next/image';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-
 import { SiSwagger } from 'react-icons/si';
-import { useEffect, useState } from 'react';
 import { ProjectsProp } from '@/types/types';
+import ProjectSwiper from './ProjectSwiper';
 
 const cardVariants: Variants = {
   hidden: { opacity: 0, y: 50 },
@@ -41,29 +35,7 @@ export default function ProjectsList({ projects }: ProjectsProp) {
           viewport={{ once: true, amount: 0.2 }}
         >
           <div className="w-full p-4">
-            <Swiper
-              modules={[Navigation, Pagination]}
-              spaceBetween={12}
-              slidesPerView={1}
-              pagination={{ clickable: true }}
-              navigation
-              loop={true}
-            >
-              {project.images.map((img, index) => (
-                <SwiperSlide key={index}>
-                  <div className="relative w-full aspect-[1356/858]">
-                    <Image
-                      src={img}
-                      alt={`Project image ${index + 1}`}
-                      fill
-                      sizes="(max-width: 1024px) 100vw, 50vw"
-                      className="object-cover rounded-xl"
-                      loading="lazy"
-                    />
-                  </div>
-                </SwiperSlide>
-              ))}
-            </Swiper>
+            <ProjectSwiper images={project.images} />
           </div>
 
           <div className="flex flex-col gap-4 p-4 pt-0 text-base xl:text-xl">

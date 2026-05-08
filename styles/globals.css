@@ -77,24 +77,6 @@ ul {
   animation: heartbeat 5s infinite ease-in-out;
 }
 
-.swiper-button-next,
-.swiper-button-prev {
-  color: var(--dark-accent) !important;
-  opacity: 0.2;
-  width: 20px !important;
-  height: 20px !important;
-}
-
-.swiper-button-next:hover,
-.swiper-button-prev:hover {
-  opacity: 0.9;
-}
-
-/* .swiper-button-next::after,
-.swiper-button-prev::after {
-  font-size: 24px;
-} */
-
 .swiper-pagination-bullet {
   background-color: var(--light-accent) !important;
   opacity: 1 !important;
