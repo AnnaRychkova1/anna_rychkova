@@ -13,8 +13,8 @@
     ],
     "type": "individual",
     "role": "software developer",
-    "overview": "Smart Recruitment is a backend system for managing recruitment workflows, including candidate processing, CV handling, and interview scheduling.",
-    "contribution": "Designed and implemented a distributed-style backend system (microservices-based) for recruitment workflows, including authentication, candidate management, and interview scheduling. Built service-to-service communication using gRPC and integrated OpenAI API for AI-assisted CV analysis. Implemented JWT-based authentication and structured API workflows, automating candidate processing and reducing manual CV screening.",
+    "overview": "Backend recruitment platform for managing candidates, CV processing, and interview workflows.",
+    "contribution": "Built a distributed backend system for recruitment workflows. Implemented JWT authentication, candidate management, and interview scheduling. Designed gRPC-based service communication between system components and integrated OpenAI API for automated CV analysis, reducing manual screening effort.",
     "links": {
       "github": "https://github.com/AnnaRychkova1/smart-recruitment-grpc",
       "demo": "https://res.cloudinary.com/dmzsusenh/video/upload/f_mp4/v1759780854/2025-10-06_20-52-40_xl67us.mkv"
@@ -30,6 +30,32 @@
   },
   {
     "id": 2,
+    "name": "Attaboy Dog Training",
+    "images": [
+      "/images/attaboy-1.png",
+      "/images/attaboy-2.png",
+      "/images/attaboy-3.png",
+      "/images/attaboy-4.png"
+    ],
+    "type": "team",
+    "role": "team lead / software developer",
+    "overview": "Production web platform for a real dog training business.",
+    "contribution": "Built and deployed a live business platform for client communication and operations. Developed admin dashboard for managing testimonials and inquiries. Implemented authentication workflows, contact forms with email notifications, and content management tools. Set up CI/CD and production deployment via Vercel.",
+    "links": {
+      "github": "https://github.com/AnnaRychkova1/attaboy-dog-training",
+      "website": "https://attaboydogtraining.ie/"
+    },
+    "technologies": [
+      "Next.js",
+      "React",
+      "Firebase",
+      "TailwindCSS",
+      "Nodemailer",
+      "Vercel"
+    ]
+  },
+  {
+    "id": 3,
     "name": "CodeCraft",
     "images": [
       "/images/code-craft-1.png",
@@ -37,11 +63,10 @@
       "/images/code-craft-3.png",
       "/images/code-craft-4.png"
     ],
-
     "type": "individual",
     "role": "software developer",
-    "overview": "CodeCraft is a backend-focused coding practice platform for executing programming tasks and tracking user progress.",
-    "contribution": "Developed backend logic for task management, submissions, and progress tracking using Node.js and TypeScript. Integrated Supabase for authentication and data storage and used Piston API for code execution. Implemented role-based access control and protected admin functionality. Added feedback system with SendGrid notifications. Enabled structured coding practice with automated code execution, user progress tracking, and secure role-based access for administrators and users.",
+    "overview": "Full-stack coding practice platform with code execution and progress tracking.",
+    "contribution": "Built a full-stack platform for coding practice with task management and submissions. Integrated Piston API for live code execution and Supabase for authentication and data storage. Implemented role-based access control, admin protection, and user progress tracking. Added feedback system with email notifications.",
     "links": {
       "github": "https://github.com/AnnaRychkova1/CodeCraft",
       "website": "https://code-craft-omega-eight.vercel.app/"
@@ -57,7 +82,7 @@
     ]
   },
   {
-    "id": 3,
+    "id": 4,
     "name": "AquaTrack",
     "images": [
       "/images/aquatrack-1.png",
@@ -67,8 +92,8 @@
     ],
     "type": "team",
     "role": "team lead / full-stack developer",
-    "overview": "AquaTrack is a full-stack application for tracking daily water intake with user goals and progress analytics.",
-    "contribution": "Worked as team lead coordinating backend and frontend integration. Built REST APIs for user data, hydration tracking, and authentication flows. Designed API documentation using Swagger and implemented email verification, password reset, and Google OAuth authentication. Managed GitHub workflow including pull requests and code reviews. Ensured consistent data flow between frontend and backend and delivered a stable full-stack system with working authentication and real-time tracking features.",
+    "overview": "Full-stack water tracking app for monitoring daily hydration and progress.",
+    "contribution": "Led development in an 11-person team. Built REST APIs for hydration tracking, user management, and authentication. Implemented email verification, password reset, and Google OAuth. Designed Swagger API documentation and coordinated backend/frontend integration through GitHub workflows and code reviews.",
     "links": {
       "githubFrontend": "https://github.com/AnnaRychkova1/aquatrack-front-1",
       "githubBackend": "https://github.com/AnnaRychkova1/aquatrack-back-1",
@@ -78,33 +103,7 @@
     },
     "technologies": ["Node.js", "Express", "MongoDB", "React", "JWT", "Swagger"]
   },
-  {
-    "id": 4,
-    "name": "Attaboy Dog Training",
-    "images": [
-      "/images/attaboy-1.png",
-      "/images/attaboy-2.png",
-      "/images/attaboy-3.png",
-      "/images/attaboy-4.png"
-    ],
-    "type": "team",
-    "role": "team lead / software developer",
-    "overview": "Attaboy Dog Training is a web platform for managing client communication and business operations for a real dog training service.",
-    "contribution": "Built admin system for managing testimonials and client inquiries. Implemented authentication-based workflows, contact forms with email notifications, and admin dashboard for content management. Deployed application and set up CI/CD pipeline using Vercel.Provided a working business platform that supports client communication and simplifies content and inquiry management for daily operations.",
-    "links": {
-      "github": "https://github.com/AnnaRychkova1/attaboy-dog-training",
-      "website": "https://attaboydogtraining.ie/"
-    },
 
-    "technologies": [
-      "Next.js",
-      "React",
-      "Firebase",
-      "TailwindCSS",
-      "Nodemailer",
-      "Vercel"
-    ]
-  },
   {
     "id": 5,
     "name": "Camper Rent",
@@ -117,8 +116,8 @@
     ],
     "type": "individual",
     "role": "frontend engineer",
-    "overview": "Camper Rent is a responsive web application for browsing and renting campers, featuring API-driven search, filtering, and booking workflows.",
-    "contribution": "Built a React-based front-end application with focus on structured data flow and scalable state management. Implemented global state handling using Redux Toolkit and Redux Persist to manage filters, pagination, and user preferences. Integrated external APIs using Axios, designing efficient data fetching and update flows for search and filtering functionality. Implemented validated user input handling using Formik and Yup to support booking workflows. Ensured consistent client-side behaviour, error handling, and responsive design, resulting in a maintainable application with reliable data interaction and smooth user experience.",
+    "overview": "Responsive camper rental web app with search, filtering, and booking features.",
+    "contribution": "Built a React-based frontend application with API-driven search and filtering. Implemented global state management using Redux Toolkit and Redux Persist for filters, pagination, and user preferences. Integrated external REST APIs using Axios and built booking flow with validated forms using Formik and Yup. Ensured responsive UI, error handling, and consistent client-side behaviour.",
     "links": {
       "github": "https://github.com/AnnaRychkova1/camper-rent",
       "website": "https://camperrent.netlify.app/"
@@ -137,8 +136,8 @@
     ],
     "type": "team",
     "role": "team lead / frontend developer",
-    "overview": "Energy Flow is a responsive web application that delivers structured exercise data through API-driven interactions, supporting a smooth and interactive user experience.",
-    "contribution": "Led front-end development and defined the overall application structure and styling system. Organized a modular and consistent UI approach to support scalability and maintainability across the application. Developed client-side logic for API integration using Axios, including data fetching, search, and pagination, and introduced shared utilities for handling UI behaviour and error management. Coordinated team development through GitHub workflows and code reviews, resulting in a maintainable front-end structure with reliable API interaction and improved user experience.",
+    "overview": "Responsive web app for browsing structured exercise data via API integration.",
+    "contribution": "Led frontend development and defined application structure and UI architecture. Implemented API integration using Axios with search, filtering, and pagination features. Built reusable UI components and shared utilities for consistent behaviour and error handling. Coordinated team workflow via GitHub, code reviews, and integration planning.",
     "links": {
       "github": "https://github.com/AnnaRychkova1/EnergyFlowWeb",
       "website": "https://annarychkova1.github.io/EnergyFlowWeb/"
@@ -157,8 +156,8 @@
     ],
     "type": "individual",
     "role": "full-stack developer",
-    "overview": "Phonebook is a full-stack contact management application with authentication-protected user accounts and user-specific contact data handling.",
-    "contribution": "Developed a full-stack application for managing personal contact lists with secure authentication workflows and protected user access. Built REST APIs using Node.js and MongoDB for user registration, login, and contact management, ensuring each user could securely access and manage their own data. Implemented frontend authentication flows, protected routing, and centralized state management using React and Redux Toolkit. Structured API service layers and organized backend architecture using controllers, services, middlewares, and schema validation, resulting in a maintainable client-server application with secure user-specific data handling.",
+    "overview": "Full-stack contact management app with authentication and user-specific data storage.",
+    "contribution": "Built a full-stack application for managing personal contacts with secure authentication. Developed REST API with Node.js and MongoDB for user registration, login, and contact CRUD operations. Implemented JWT-based authentication and protected routes. Built frontend state management with Redux Toolkit and structured backend using controllers, services, and validation middleware.",
     "links": {
       "githubFrontend": "https://github.com/AnnaRychkova1/phonebook-auth",
       "githubBackend": "https://github.com/AnnaRychkova1/phonebook-auth-api",
@@ -185,8 +184,8 @@
     ],
     "type": "individual",
     "role": "web developer",
-    "overview": "GardenShop is a responsive e-commerce web application for browsing and showcasing garden plants, with product catalog, cart functionality, and contact features.",
-    "contribution": "Built a full frontend application using HTML, CSS, and JavaScript. Implemented dynamic product catalog using JSON data, including search and filter functionality. Developed interactive UI components such as product cards, image carousel, and modal views for product details. Added shopping cart functionality using Local Storage with real-time updates. Built a validated contact form and ensured responsive design across devices.",
+    "overview": "Responsive e-commerce frontend for browsing garden plants with cart and catalog features.",
+    "contribution": "Built a frontend e-commerce application using HTML, CSS, and JavaScript. Implemented dynamic product catalog from JSON data with search and filtering. Developed interactive UI components including product cards, modals, and image carousel. Added shopping cart functionality using Local Storage and built validated contact form with responsive design.",
     "links": {
       "github": "https://github.com/AnnaRychkova1/GardenShop",
       "website": "https://annarychkova1.github.io/GardenShop/"
@@ -204,8 +203,8 @@
     ],
     "type": "team",
     "role": "software developer",
-    "overview": "Misto Hub is a public platform aimed at promoting urban development in Poltava by providing accessible information and attracting potential investors through a responsive and interactive web experience.",
-    "contribution": "Contributed to the development of a full-stack application using React and Node.js, focusing on interactive features and system integration. Implemented Telegram bot integration to enhance user communication and platform engagement. Developed reusable UI functionality with validation logic and implemented client-side form persistence using sessionStorage. Ensured responsive and accessible interface behaviour across devices. Collaborated within a cross-functional team including developers, QA engineers, designers, and project management, ensuring alignment with requirements and smooth front-end and back-end integration, resulting in a reliable and user-centric application.",
+    "overview": "Urban development platform for promoting city projects and investor engagement.",
+    "contribution": "Contributed to a full-stack React and Node.js application focused on city development initiatives. Implemented Telegram bot integration for user communication and engagement. Developed reusable UI components with validation logic and session-based data persistence. Worked in a cross-functional team ensuring smooth frontend and backend integration and responsive UI behaviour.",
     "links": {
       "github": "https://github.com/IvettaDashkova/MistoHub",
       "website": "http://mistohub.org/"
@@ -230,8 +229,8 @@
     ],
     "type": "team",
     "role": "frontend developer",
-    "overview": "Dream Yachts is a responsive portfolio website for a luxury yacht company, designed to showcase services and improve user engagement through a structured and visually appealing interface.",
-    "contribution": "Contributed to the development of a responsive front-end interface using HTML and CSS, focusing on layout structure and visual consistency. Implemented adaptive design to ensure proper rendering across desktop, tablet, and mobile devices. Developed interactive UI elements such as navigation, anchor-based scrolling, and call-to-action components to improve usability. Collaborated with the team to maintain design consistency and align with project requirements, contributing to a cohesive and responsive front-end experience.",
+    "overview": "Responsive portfolio website for a luxury yacht company.",
+    "contribution": "Developed responsive UI using HTML and CSS with focus on layout structure and visual consistency. Implemented adaptive design for desktop, tablet, and mobile screens. Built navigation, anchor scrolling, and interactive call-to-action elements. Collaborated with the team to maintain consistent UI across pages.",
     "links": {
       "github": "https://github.com/KaguasBest/DreamYachts",
       "website": "https://kaguasbest.github.io/DreamYachts/"
@@ -249,9 +248,8 @@
     ],
     "type": "team",
     "role": "frontend developer",
-    "overview": "Currency is a React-based application for currency conversion and data visualization with external API integration, developed as a team-based learning project and deployed to production.",
-
-    "contribution": "Contributed to the development of a React-based currency conversion application. Implemented client-side logic for external API integration, including geolocation-based user data retrieval using latitude and longitude coordinates. Worked on processing API responses and supporting dynamic UI updates for improved user interaction. Ensured responsive design and clean component structure to improve usability and maintainability. Configured project setup using Vite and handled deployment to Vercel with required adjustments for production readiness. Improved user experience by ensuring real-time data updates and stable application behaviour across devices.",
+    "overview": "React app for currency conversion with external API integration.",
+    "contribution": "Worked on a React-based currency conversion application with external API integration. Implemented geolocation-based data retrieval and dynamic UI updates based on API responses. Structured responsive components and ensured stable real-time data updates. Configured deployment to Vercel and prepared project for production.",
     "links": {
       "github": "https://github.com/AnnaRychkova1/blended-currency",
       "website": "https://blended-currency.vercel.app/"
@@ -268,9 +266,8 @@
     ],
     "type": "team",
     "role": "frontend developer",
-    "overview": "Country is a React-based application for exploring country data by region, developed as a team-based learning project with structured API integration and deployed to production.",
-
-    "contribution": "Contributed to the development of a React application for exploring country data by region and name. Implemented service-based API functions for handling REST API requests and organizing data fetching logic. Worked with helper functions to transform API responses into consistent formats before rendering. Applied separation of concerns to improve code structure and maintainability. Contributed to modular client-side architecture to ensure efficient data flow and reusable API services. Participated in deployment preparation and ensured responsive UI behaviour across devices, improving overall usability and stability of the application.",
+    "overview": "React app for exploring country data by region and name.",
+    "contribution": "Developed a React application for browsing country data using external REST API. Built service-based API layer and helper functions for transforming API responses. Improved code structure through separation of concerns and reusable data logic. Ensured responsive UI and supported deployment readiness.",
     "links": {
       "github": "https://github.com/AnnaRychkova1/blended-country",
       "website": "https://blended-country.vercel.app/"
@@ -289,8 +286,8 @@
     ],
     "type": "personal",
     "role": "frontend developer",
-    "overview": "Movie App is a frontend application for browsing trending movies, searching titles, and viewing detailed movie information using external movie APIs.",
-    "contribution": "Developed a frontend movie application for browsing trending movies, searching titles, and viewing detailed movie information. Implemented Redux state management, dynamic routing, and integrated external movie APIs for handling movie data and search functionality. Structured reusable UI components and configured deployment using Vite and Vercel. Delivered a responsive single-page application with centralized state management and smooth client-side user experience.",
+    "overview": "Movie browsing app with search and trending movies features.",
+    "contribution": "Built a React movie application with Redux state management and React Router. Integrated external movie API for fetching trending movies and search results. Developed reusable UI components and implemented dynamic routing. Deployed application using Vite and Vercel.",
     "links": {
       "github": "https://github.com/AnnaRychkova1/movies-redux",
       "website": "https://movies-redux-coral.vercel.app/"
@@ -318,8 +315,8 @@
     ],
     "type": "individual",
     "role": "frontend developer",
-    "overview": "WebStudio is a responsive multi-page business website focused on presenting company services, team information, and customer interaction through a structured user interface.",
-    "contribution": "Developed a responsive multi-page frontend application using HTML, CSS, and JavaScript. Implemented adaptive layouts, mobile navigation, modal interaction logic, and structured UI sections for services, team presentation, and customer engagement. Built reusable styling structure and responsive image handling to ensure consistent rendering across desktop, tablet, and mobile devices. Improved user interaction and accessibility through responsive navigation, interactive forms, and client-side UI behaviour.",
+    "overview": "Multi-page business website for company services and team presentation.",
+    "contribution": "Developed a responsive multi-page website using HTML, CSS, and JavaScript. Implemented adaptive layouts, modal windows, and mobile navigation. Built structured UI sections for services and team presentation. Focused on responsive design and consistent cross-device behaviour.",
     "links": {
       "github": "https://github.com/AnnaRychkova1/web-studio"
     },
@@ -335,30 +332,12 @@
     ],
     "type": "individual",
     "role": "frontend developer",
-    "overview": "Simply Chocolate is a responsive product landing page designed to showcase chocolate products through structured layouts, interactive sections, and adaptive user interface behaviour.",
-    "contribution": "Developed a responsive multi-section landing page using HTML, CSS, and JavaScript. Implemented adaptive layouts, interactive UI elements, modal interactions, and structured content sections focused on product presentation and user engagement. Applied responsive design techniques and reusable styling structure to ensure consistent rendering across desktop, tablet, and mobile devices. Improved user experience through smooth navigation, visual consistency, and responsive client-side interface behaviour.",
+    "overview": "Responsive landing page for chocolate product presentation.",
+    "contribution": "Built a responsive landing page using HTML, CSS, and JavaScript. Implemented structured product sections, modal interactions, and adaptive layout design. Focused on responsive UI and consistent styling across devices.",
     "links": {
       "github": "https://github.com/AnnaRychkova1/Simply-Shockolate",
       "website": "https://annarychkova1.github.io/Simply-Shockolate/"
     },
     "technologies": ["HTML", "CSS", "JavaScript", "Responsive Design"]
-  },
-  {
-    "id": 16,
-    "name": "Food Delivery",
-    "images": [
-      "/images/food-delivery-1.png",
-      "/images/food-delivery-2.png",
-      "/images/food-delivery-3.png"
-    ],
-    "type": "individual",
-    "role": "frontend developer",
-    "overview": "Food Delivery is a responsive landing page for a food delivery service, designed to present menu information, service features, and customer-focused content through a structured user interface.",
-    "contribution": "Developed a responsive frontend landing page using HTML and CSS with focus on layout structure, visual consistency, and adaptive design. Implemented responsive sections for service presentation, navigation, and promotional content to ensure proper rendering across desktop, tablet, and mobile devices. Structured reusable styling components and applied modern CSS techniques for flexible page layouts and maintainable styling. Improved usability and visual presentation through responsive interface behaviour and organized content structure.",
-    "links": {
-      "github": "https://github.com/AnnaRychkova1/Food-Delivery",
-      "website": "https://annarychkova1.github.io/Food-Delivery/"
-    },
-    "technologies": ["HTML", "CSS", "Responsive Design"]
   }
 ]
